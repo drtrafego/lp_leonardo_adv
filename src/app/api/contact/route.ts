@@ -121,20 +121,20 @@ async function saveToNeon(lead: any) {
 
     const sql = neon(process.env.DATABASE_URL!);
 
-    const organizationId = process.env.CRM_ORGANIZATION_ID!;
+    const organizationId = process.env.ORGANIZATION_ID!;
 
     console.log(`Usando Organization ID: ${organizationId}`);
 
     const result = await sql`
             INSERT INTO public.leads (
-                name, email, whatsapp, created_at,
-                status, organization_id,
-                utm_source, utm_medium, utm_campaign, utm_term, page_path
+                name, email, whatsapp,
+                status, position, organization_id,
+                utm_source, utm_medium, utm_campaign, utm_term
             )
             VALUES (
-                ${lead.name}, ${lead.email}, ${lead.phone}, ${lead.created_at},
-                'Novo', ${organizationId},
-                ${lead.utm_source || null}, ${lead.utm_medium || null}, ${lead.utm_campaign || null}, ${lead.utm_term || null}, ${lead.page_path || null}
+                ${lead.name}, ${lead.email}, ${lead.phone},
+                'novo', 0, ${organizationId},
+                ${lead.utm_source || null}, ${lead.utm_medium || null}, ${lead.utm_campaign || null}, ${lead.utm_term || null}
             )
             RETURNING *;
         `;
