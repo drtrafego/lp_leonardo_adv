@@ -30,13 +30,13 @@ function ObrigadoContent() {
   return (
     <div style={{
       minHeight: "100vh",
-      background: "#0B2828",
+      background: "#072B31",
       display: "flex",
       flexDirection: "column",
       alignItems: "center",
       justifyContent: "center",
       padding: "2rem",
-      fontFamily: "'Inter', system-ui, sans-serif",
+      fontFamily: "'Lato', system-ui, sans-serif",
     }}>
       <div style={{
         maxWidth: "480px",
@@ -44,10 +44,10 @@ function ObrigadoContent() {
         textAlign: "center",
       }}>
         <div style={{
-          fontFamily: "'Cormorant Garamond', Georgia, serif",
+          fontFamily: "'PT Serif', Georgia, serif",
           fontSize: "3.5rem",
           fontWeight: 700,
-          color: "#C9A452",
+          color: "#C1C156",
           letterSpacing: "0.04em",
           lineHeight: 1,
           marginBottom: "8px",
@@ -67,12 +67,12 @@ function ObrigadoContent() {
         <div style={{
           width: "40px",
           height: "1px",
-          background: "#C9A452",
+          background: "#C1C156",
           margin: "0 auto 32px",
         }} />
 
         <h1 style={{
-          fontFamily: "'Cormorant Garamond', Georgia, serif",
+          fontFamily: "'PT Serif', Georgia, serif",
           fontSize: "clamp(1.8rem, 5vw, 2.4rem)",
           fontWeight: 300,
           color: "#F5F0E8",
@@ -99,9 +99,9 @@ function ObrigadoContent() {
           href={whatsappUrl}
           style={{
             display: "inline-block",
-            background: "#C9A452",
-            color: "#0B2828",
-            fontFamily: "'Inter', system-ui, sans-serif",
+            background: "#C1C156",
+            color: "#072B31",
+            fontFamily: "'Lato', system-ui, sans-serif",
             fontSize: "0.7rem",
             fontWeight: 700,
             letterSpacing: "0.16em",
@@ -169,10 +169,10 @@ function CountdownBar({ whatsappUrl }: { whatsappUrl: string }) {
           Redirecionando em
         </span>
         <span className="countdown-number" style={{
-          fontFamily: "'Cormorant Garamond', Georgia, serif",
+          fontFamily: "'PT Serif', Georgia, serif",
           fontSize: "1.4rem",
           fontWeight: 600,
-          color: "#C9A452",
+          color: "#C1C156",
         }}>
           10
         </span>
@@ -196,7 +196,7 @@ function CountdownBar({ whatsappUrl }: { whatsappUrl: string }) {
           style={{
             height: "100%",
             width: "100%",
-            background: "linear-gradient(90deg, #C9A452, #E8C97A)",
+            background: "linear-gradient(90deg, #C1C156, #E8C97A)",
             transition: "width 1s linear",
           }}
         />

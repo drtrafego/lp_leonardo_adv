@@ -60,42 +60,42 @@ export default function ContactForm({ theme }: ContactFormProps) {
   const colors = {
     dark: {
       bg: "#0D3030",
-      cardBg: "#0B2828",
+      cardBg: "#072B31",
       border: "rgba(201,164,82,0.25)",
-      topBar: "linear-gradient(90deg, #C9A452, #E8C97A)",
+      topBar: "linear-gradient(90deg, #C1C156, #E8C97A)",
       label: "rgba(201,164,82,0.7)",
-      inputBg: "#0B2828",
+      inputBg: "#072B31",
       inputBorder: "rgba(201,164,82,0.2)",
       inputText: "#F5F0E8",
       inputPlaceholder: "rgba(245,240,232,0.35)",
       title: "#F5F0E8",
       subtitle: "rgba(245,240,232,0.5)",
-      btn: "#C9A452",
-      btnText: "#0B2828",
+      btn: "#C1C156",
+      btnText: "#072B31",
       btnHover: "#B8943F",
       subtext: "rgba(245,240,232,0.45)",
-      phoneBg: "#0B2828",
+      phoneBg: "#072B31",
       phoneBorder: "rgba(201,164,82,0.2)",
       phoneText: "#F5F0E8",
-      phoneFlagBg: "#0B2828",
+      phoneFlagBg: "#072B31",
       phoneListBg: "#0D3030",
       phoneListText: "#F5F0E8",
-      phoneListHighlight: "#0B2828",
+      phoneListHighlight: "#072B31",
       btnBorder: undefined as string | undefined,
     },
     light: {
       bg: "#F9F6F1",
       cardBg: "#FFFFFF",
       border: "#D8D0C4",
-      topBar: "linear-gradient(90deg, #C9A452, #E8C97A)",
+      topBar: "linear-gradient(90deg, #C1C156, #E8C97A)",
       label: "#9C9080",
       inputBg: "#F9F6F1",
       inputBorder: "#D8D0C4",
       inputText: "#1A1A1A",
       inputPlaceholder: "#9C9080",
-      title: "#0B2828",
+      title: "#072B31",
       subtitle: "#9C9080",
-      btn: "#0B2828",
+      btn: "#072B31",
       btnText: "#FFFFFF",
       btnHover: "#0D3030",
       subtext: "#9C9080",
@@ -110,24 +110,24 @@ export default function ContactForm({ theme }: ContactFormProps) {
     },
     editorial: {
       bg: "#0E1A1A",
-      cardBg: "#080F0F",
+      cardBg: "#072B31",
       border: "rgba(212,175,96,0.15)",
-      topBar: "linear-gradient(90deg, #D4AF60, #F0D080)",
+      topBar: "linear-gradient(90deg, #C1C156, #F0D080)",
       label: "rgba(212,175,96,0.6)",
-      inputBg: "#080F0F",
+      inputBg: "#072B31",
       inputBorder: "rgba(212,175,96,0.15)",
       inputText: "#FFFFFF",
       inputPlaceholder: "rgba(255,255,255,0.25)",
       title: "#FFFFFF",
       subtitle: "rgba(255,255,255,0.45)",
       btn: "transparent",
-      btnText: "#D4AF60",
-      btnHover: "#D4AF60",
+      btnText: "#C1C156",
+      btnHover: "#C1C156",
       subtext: "rgba(255,255,255,0.3)",
-      phoneBg: "#080F0F",
+      phoneBg: "#072B31",
       phoneBorder: "rgba(212,175,96,0.15)",
       phoneText: "#FFFFFF",
-      phoneFlagBg: "#080F0F",
+      phoneFlagBg: "#072B31",
       phoneListBg: "#0E1A1A",
       phoneListText: "#FFFFFF",
       phoneListHighlight: "#0B1515",
@@ -153,14 +153,14 @@ export default function ContactForm({ theme }: ContactFormProps) {
       }} />
 
       <div style={{
-        fontFamily: "'Cormorant Garamond', Georgia, serif",
+        fontFamily: "'PT Serif', Georgia, serif",
         fontSize: "1.3rem", fontWeight: 700,
         color: c.title, marginBottom: "4px",
       }}>
         Solicitar Atendimento
       </div>
       <div style={{
-        fontFamily: "'Inter', system-ui, sans-serif",
+        fontFamily: "'Lato', system-ui, sans-serif",
         fontSize: ".8rem", color: c.subtitle, marginBottom: "28px",
       }}>
         Resposta em até 24h
@@ -170,7 +170,7 @@ export default function ContactForm({ theme }: ContactFormProps) {
         <div style={{ marginBottom: "16px" }}>
           <label style={{
             display: "block",
-            fontFamily: "'Inter', system-ui, sans-serif",
+            fontFamily: "'Lato', system-ui, sans-serif",
             fontSize: ".62rem", fontWeight: 700,
             letterSpacing: ".16em", textTransform: "uppercase",
             color: c.label, marginBottom: "7px",
@@ -188,7 +188,7 @@ export default function ContactForm({ theme }: ContactFormProps) {
               border: `1px solid ${c.inputBorder}`,
               borderRadius: "2px", padding: "12px 14px",
               color: c.inputText, fontSize: ".88rem",
-              fontFamily: "'Inter', system-ui, sans-serif",
+              fontFamily: "'Lato', system-ui, sans-serif",
               outline: "none", boxSizing: "border-box",
             }}
           />
@@ -197,7 +197,7 @@ export default function ContactForm({ theme }: ContactFormProps) {
         <div style={{ marginBottom: "16px" }}>
           <label style={{
             display: "block",
-            fontFamily: "'Inter', system-ui, sans-serif",
+            fontFamily: "'Lato', system-ui, sans-serif",
             fontSize: ".62rem", fontWeight: 700,
             letterSpacing: ".16em", textTransform: "uppercase",
             color: c.label, marginBottom: "7px",
@@ -215,7 +215,7 @@ export default function ContactForm({ theme }: ContactFormProps) {
               border: `1px solid ${c.inputBorder}`,
               borderRadius: "2px", padding: "12px 14px",
               color: c.inputText, fontSize: ".88rem",
-              fontFamily: "'Inter', system-ui, sans-serif",
+              fontFamily: "'Lato', system-ui, sans-serif",
               outline: "none", boxSizing: "border-box",
             }}
           />
@@ -224,7 +224,7 @@ export default function ContactForm({ theme }: ContactFormProps) {
         <div className={`ct-phone-${theme}`} style={{ marginBottom: "24px" }}>
           <label style={{
             display: "block",
-            fontFamily: "'Inter', system-ui, sans-serif",
+            fontFamily: "'Lato', system-ui, sans-serif",
             fontSize: ".62rem", fontWeight: 700,
             letterSpacing: ".16em", textTransform: "uppercase",
             color: c.label, marginBottom: "7px",
@@ -238,7 +238,7 @@ export default function ContactForm({ theme }: ContactFormProps) {
               border-radius: 2px !important;
               color: ${c.phoneText} !important;
               font-size: .88rem !important;
-              font-family: 'Inter', system-ui, sans-serif !important;
+              font-family: 'Lato', system-ui, sans-serif !important;
               height: 48px !important;
               padding-left: 52px !important;
               width: 100% !important;
@@ -280,7 +280,7 @@ export default function ContactForm({ theme }: ContactFormProps) {
             background: isFormValid && !isLoading ? c.btn : "rgba(128,128,128,0.3)",
             color: isFormValid && !isLoading ? c.btnText : "rgba(128,128,128,0.6)",
             border: (isFormValid && !isLoading && c.btnBorder) ? c.btnBorder : "none",
-            fontFamily: "'Inter', system-ui, sans-serif",
+            fontFamily: "'Lato', system-ui, sans-serif",
             fontSize: ".7rem", fontWeight: 700,
             letterSpacing: ".16em", textTransform: "uppercase",
             padding: "15px 24px", cursor: isFormValid && !isLoading ? "pointer" : "not-allowed",
@@ -292,7 +292,7 @@ export default function ContactForm({ theme }: ContactFormProps) {
 
         <div style={{
           marginTop: "14px", textAlign: "center",
-          fontFamily: "'Inter', system-ui, sans-serif",
+          fontFamily: "'Lato', system-ui, sans-serif",
           fontSize: ".65rem", color: c.subtext,
           letterSpacing: ".06em",
         }}>

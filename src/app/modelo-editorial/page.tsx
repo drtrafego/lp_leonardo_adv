@@ -32,13 +32,13 @@ export default function ModeloEditorialPage() {
     <>
       <style>{`
         html { scroll-behavior: smooth; }
-        body { background-color: #080F0F; color: #FFFFFF; font-family: 'Inter', sans-serif; }
-        .font-serif { font-family: 'Cormorant Garamond', serif; }
-        .section-mid { background-color: #0E1A1A; }
+        body { background-color: #072B31; color: #FFFFFF; font-family: 'Lato', sans-serif; }
+        .font-serif { font-family: 'PT Serif', serif; }
+        .section-mid { background-color: #0A3038; }
         .btn-outline-gold {
-          border: 1px solid #D4AF60;
-          color: #D4AF60;
-          font-family: 'Inter', sans-serif;
+          border: 1px solid #C1C156;
+          color: #C1C156;
+          font-family: 'Lato', sans-serif;
           font-weight: 500;
           letter-spacing: 0.1em;
           transition: all 0.25s ease;
@@ -46,11 +46,11 @@ export default function ModeloEditorialPage() {
           text-decoration: none;
           display: inline-block;
         }
-        .btn-outline-gold:hover { background-color: #D4AF60; color: #080F0F; }
+        .btn-outline-gold:hover { background-color: #C1C156; color: #072B31; }
         .btn-gold-solid {
-          background-color: #D4AF60;
-          color: #080F0F;
-          font-family: 'Inter', sans-serif;
+          background-color: #C1C156;
+          color: #072B31;
+          font-family: 'Lato', sans-serif;
           font-weight: 600;
           letter-spacing: 0.1em;
           transition: background-color 0.2s ease;
@@ -59,7 +59,7 @@ export default function ModeloEditorialPage() {
         }
         .btn-gold-solid:hover { background-color: #b8943e; }
         .number-giant {
-          font-family: 'Cormorant Garamond', serif;
+          font-family: 'PT Serif', serif;
           font-weight: 300;
           color: transparent;
           -webkit-text-stroke: 1px rgba(212,175,96,0.25);
@@ -68,14 +68,14 @@ export default function ModeloEditorialPage() {
           pointer-events: none;
         }
         .divider-thin-ed { border-top: 1px solid rgba(212,175,96,0.12); }
-        .editorial-quote { border-left: 2px solid #D4AF60; padding-left: 2rem; }
+        .editorial-quote { border-left: 2px solid #C1C156; padding-left: 2rem; }
         .grid-editorial-ed {
           display: grid;
           grid-template-columns: 1fr;
           gap: 1px;
           background-color: rgba(212,175,96,0.1);
         }
-        .grid-editorial-ed > * { background-color: #080F0F; }
+        .grid-editorial-ed > * { background-color: #072B31; }
         @media (min-width: 768px) {
           .grid-editorial-ed { grid-template-columns: repeat(3, 1fr); }
         }
@@ -97,7 +97,7 @@ export default function ModeloEditorialPage() {
               </div>
               <h1 className="font-serif" style={{ fontWeight: 300, lineHeight: 1, marginBottom: "2rem", fontSize: "clamp(2.8rem, 7vw, 6.5rem)", letterSpacing: "-0.02em" }}>
                 Divórcio para Homens:<br />
-                <em style={{ color: "#D4AF60", fontStyle: "normal" }}>Sem perder a convivência</em><br />
+                <em style={{ color: "#C1C156", fontStyle: "normal" }}>Sem perder a convivência</em><br />
                 <span style={{ color: "rgba(255,255,255,0.6)" }}>com seus filhos.</span>
               </h1>
               <div style={{ width: "120px", height: "1px", background: "rgba(212,175,96,0.4)", marginBottom: "2rem" }} />
@@ -143,7 +143,7 @@ export default function ModeloEditorialPage() {
             <h2 className="font-serif" style={{ fontWeight: 300, lineHeight: 1, marginBottom: "0.75rem", fontSize: "clamp(2.5rem, 5vw, 5rem)" }}>
               Dr. Leonardo Carvalho
             </h2>
-            <p style={{ color: "#D4AF60", fontFamily: "Inter, sans-serif", fontSize: "0.875rem", textTransform: "uppercase", letterSpacing: "0.15em", marginBottom: "2rem", fontWeight: 300 }}>
+            <p style={{ color: "#C1C156", fontFamily: "Inter, sans-serif", fontSize: "0.875rem", textTransform: "uppercase", letterSpacing: "0.15em", marginBottom: "2rem", fontWeight: 300 }}>
               14 anos de experiência em planejamento e proteção patrimonial
             </p>
             <ul style={{ display: "flex", flexDirection: "column", gap: 0, marginBottom: "1.5rem" }}>
@@ -225,7 +225,7 @@ export default function ModeloEditorialPage() {
               "Imagine passar por esse processo com clareza. Com a segurança de que cada decisão está sendo tomada com base estratégica, não em emoção ou pressão do momento.",
             ].map((text, i) => (
               <div key={i} style={{ padding: "2.5rem" }}>
-                <div style={{ width: "24px", height: "1px", background: "#D4AF60", marginBottom: "2rem" }} />
+                <div style={{ width: "24px", height: "1px", background: "#C1C156", marginBottom: "2rem" }} />
                 <p className="font-serif" style={{ fontSize: "1.5rem", fontWeight: 300, lineHeight: 1.6, color: "rgba(255,255,255,0.85)" }}>
                   {text}
                 </p>
@@ -233,7 +233,7 @@ export default function ModeloEditorialPage() {
             ))}
           </div>
           <div className="divider-thin-ed" style={{ paddingTop: "2rem" }}>
-            <p style={{ color: "#D4AF60", fontFamily: "Inter, sans-serif", fontSize: "0.75rem", textTransform: "uppercase", letterSpacing: "0.15em", fontWeight: 300 }}>
+            <p style={{ color: "#C1C156", fontFamily: "Inter, sans-serif", fontSize: "0.75rem", textTransform: "uppercase", letterSpacing: "0.15em", fontWeight: 300 }}>
               É exatamente isso que a consultoria estratégica foi desenhada para entregar.
             </p>
           </div>
@@ -252,7 +252,7 @@ export default function ModeloEditorialPage() {
             <span style={{ ...tagStyle, display: "inline-block", marginBottom: "2rem" }}>Como funciona</span>
             <h2 className="font-serif" style={{ fontWeight: 300, lineHeight: 1.2, marginBottom: "1rem", fontSize: "clamp(2rem, 4vw, 3.5rem)" }}>
               Não é uma consulta genérica.<br />
-              <em style={{ fontStyle: "normal", color: "#D4AF60" }}>É uma sessão estratégica estruturada.</em>
+              <em style={{ fontStyle: "normal", color: "#C1C156" }}>É uma sessão estratégica estruturada.</em>
             </h2>
             <p style={{ color: "rgba(255,255,255,0.45)", fontFamily: "Inter, sans-serif", fontSize: "0.875rem", lineHeight: 1.7, marginBottom: "3rem" }}>
               Em 50 minutos de atendimento direto com o Dr. Leonardo Carvalho, você sai com clareza total sobre o seu caso, sem enrolação, sem respostas vagas, sem precisar marcar um segundo encontro para entender o que fazer.
@@ -297,7 +297,7 @@ export default function ModeloEditorialPage() {
           <p style={{ color: "rgba(255,255,255,0.45)", fontFamily: "Inter, sans-serif", fontSize: "1rem", lineHeight: 1.7, maxWidth: "32rem", marginBottom: "1rem" }}>
             No atendimento jurídico tradicional, você fala com o advogado no início. Depois passa a lidar com secretárias, respostas genéricas e pouca orientação estratégica.
           </p>
-          <p style={{ color: "#D4AF60", fontFamily: "Inter, sans-serif", fontSize: "0.75rem", textTransform: "uppercase", letterSpacing: "0.15em", marginBottom: "3rem" }}>Aqui é diferente</p>
+          <p style={{ color: "#C1C156", fontFamily: "Inter, sans-serif", fontSize: "0.75rem", textTransform: "uppercase", letterSpacing: "0.15em", marginBottom: "3rem" }}>Aqui é diferente</p>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "1px", backgroundColor: "rgba(255,255,255,0.05)" }}>
             {[
               "Contato direto com o Dr. Leonardo Carvalho em cada etapa",
@@ -305,8 +305,8 @@ export default function ModeloEditorialPage() {
               "Relatório periódico informando o andamento do caso",
               "Nível de especialização técnica acima da média, com formação nacional e internacional (FGV e Universidade Gregoriana de Roma)",
             ].map((text, i) => (
-              <div key={i} style={{ backgroundColor: "#080F0F", padding: "2.5rem", display: "flex", alignItems: "flex-start", gap: "24px" }}>
-                <div style={{ width: "1px", height: "64px", background: "#D4AF60", flexShrink: 0, marginTop: "4px" }} />
+              <div key={i} style={{ backgroundColor: "#072B31", padding: "2.5rem", display: "flex", alignItems: "flex-start", gap: "24px" }}>
+                <div style={{ width: "1px", height: "64px", background: "#C1C156", flexShrink: 0, marginTop: "4px" }} />
                 <p style={{ color: "rgba(255,255,255,0.65)", fontFamily: "Inter, sans-serif", fontSize: "0.875rem", lineHeight: 1.6 }}>{text}</p>
               </div>
             ))}
@@ -329,7 +329,7 @@ export default function ModeloEditorialPage() {
             </h2>
             <div style={{ display: "flex", flexDirection: "column", gap: "20px", color: "rgba(255,255,255,0.55)", fontFamily: "Inter, sans-serif", fontSize: "1rem", lineHeight: 1.7 }}>
               <p>
-                Para garantir análise individual e profundidade no diagnóstico, o número de atendimentos é intencionalmente limitado a <span style={{ color: "#D4AF60", fontWeight: 500 }}>10 por semana</span>.
+                Para garantir análise individual e profundidade no diagnóstico, o número de atendimentos é intencionalmente limitado a <span style={{ color: "#C1C156", fontWeight: 500 }}>10 por semana</span>.
               </p>
               <p>
                 Quando a agenda fecha, novos atendimentos são abertos apenas no mês seguinte.
@@ -343,13 +343,13 @@ export default function ModeloEditorialPage() {
       </section>
 
       {/* CTA FINAL */}
-      <section id="cta-final" style={{ padding: "5rem 1.5rem", position: "relative", overflow: "hidden", background: "linear-gradient(135deg, #0E1A1A 0%, #080F0F 60%, #0B2020 100%)" }}>
+      <section id="cta-final" style={{ padding: "5rem 1.5rem", position: "relative", overflow: "hidden", background: "linear-gradient(135deg, #0A3038 0%, #072B31 60%, #0B2020 100%)" }}>
         <div style={{ position: "absolute", inset: 0, pointerEvents: "none", background: "radial-gradient(ellipse at 50% 50%, rgba(212,175,96,0.05) 0%, transparent 60%)" }} />
         <div style={{ maxWidth: "64rem", margin: "0 auto", textAlign: "center", position: "relative", zIndex: 10 }}>
-          <div style={{ width: "64px", height: "1px", background: "#D4AF60", margin: "0 auto 2.5rem" }} />
+          <div style={{ width: "64px", height: "1px", background: "#C1C156", margin: "0 auto 2.5rem" }} />
           <h2 className="font-serif" style={{ fontWeight: 300, lineHeight: 1, marginBottom: "2rem", fontSize: "clamp(2.5rem, 6vw, 5.5rem)", letterSpacing: "-0.02em" }}>
             Se você chegou até aqui,<br />
-            <em style={{ fontStyle: "normal", color: "#D4AF60" }}>entendeu o que está em jogo.</em>
+            <em style={{ fontStyle: "normal", color: "#C1C156" }}>entendeu o que está em jogo.</em>
           </h2>
           <p style={{ color: "rgba(255,255,255,0.45)", fontFamily: "Inter, sans-serif", fontSize: "1rem", lineHeight: 1.7, maxWidth: "32rem", margin: "0 auto 3.5rem" }}>
             A pergunta agora é simples: você vai tomar essa decisão com estratégia, ou no improviso?

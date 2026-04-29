@@ -19,14 +19,14 @@ const checkItemStyle: React.CSSProperties = {
 const goldLine: React.CSSProperties = {
   width: "60px",
   height: "1px",
-  backgroundColor: "#C9A452",
+  backgroundColor: "#C1C156",
   display: "block",
 };
 
 const goldLineLong: React.CSSProperties = {
   width: "120px",
   height: "1px",
-  backgroundColor: "#C9A452",
+  backgroundColor: "#C1C156",
   display: "block",
 };
 
@@ -35,13 +35,13 @@ export default function ModeloDarkPage() {
     <>
       <style>{`
         html { scroll-behavior: smooth; }
-        body { background-color: #0B2828; color: #F5F0E8; font-family: 'Inter', sans-serif; }
-        .font-serif { font-family: 'Cormorant Garamond', serif; }
+        body { background-color: #072B31; color: #F5F0E8; font-family: 'Lato', sans-serif; }
+        .font-serif { font-family: 'PT Serif', serif; }
         .divider-gold { border-top: 1px solid rgba(201,164,82,0.3); }
         .btn-gold {
-          background-color: #C9A452;
-          color: #0B2828;
-          font-family: 'Inter', sans-serif;
+          background-color: #C1C156;
+          color: #072B31;
+          font-family: 'Lato', sans-serif;
           font-weight: 600;
           letter-spacing: 0.05em;
           transition: background-color 0.2s ease;
@@ -49,7 +49,7 @@ export default function ModeloDarkPage() {
           display: inline-block;
         }
         .btn-gold:hover { background-color: #a8893a; }
-        .section-alt { background-color: #0D3030; }
+        .section-alt { background-color: #0A3038; }
         .card-virada {
           border: 1px solid rgba(201,164,82,0.2);
           padding: 2rem;
@@ -76,7 +76,7 @@ export default function ModeloDarkPage() {
             lineHeight: 1.2, color: "#F5F0E8", marginBottom: "1.5rem",
           }}>
             Divórcio para Homens:<br />
-            <span style={{ color: "#C9A452", fontWeight: 600 }}>Sem perder a convivência com seus filhos.</span><br />
+            <span style={{ color: "#C1C156", fontWeight: 600 }}>Sem perder a convivência com seus filhos.</span><br />
             Sem ceder mais patrimônio do que você deve.
           </h1>
           <span style={{ ...goldLine, margin: "0 auto 2rem" }} />
@@ -118,7 +118,7 @@ export default function ModeloDarkPage() {
             <div>
               <span style={{ ...goldLine, marginBottom: "1.5rem" }} />
               <h2 className="font-serif" style={{ fontSize: "clamp(2rem, 4vw, 3rem)", fontWeight: 300, color: "#F5F0E8", marginBottom: "0.75rem" }}>Dr. Leonardo Carvalho</h2>
-              <p style={{ color: "#C9A452", fontFamily: "Inter, sans-serif", fontSize: "0.75rem", textTransform: "uppercase", letterSpacing: "0.15em", marginBottom: "2rem" }}>
+              <p style={{ color: "#C1C156", fontFamily: "Inter, sans-serif", fontSize: "0.75rem", textTransform: "uppercase", letterSpacing: "0.15em", marginBottom: "2rem" }}>
                 Advogado especialista em divórcio para homens
               </p>
               <p style={{ color: "rgba(245,240,232,0.7)", fontFamily: "Inter, sans-serif", fontSize: "1rem", lineHeight: 1.7, marginBottom: "2rem" }}>
@@ -160,7 +160,7 @@ export default function ModeloDarkPage() {
             <p>
               O divórcio não é apenas o fim de um relacionamento. É um processo que redefine, na prática, sua relação com seus filhos e o destino do patrimônio que você construiu ao longo de anos.
             </p>
-            <div style={{ borderLeft: "2px solid #C9A452", paddingLeft: "1.5rem", margin: "1rem 0" }}>
+            <div style={{ borderLeft: "2px solid #C1C156", paddingLeft: "1.5rem", margin: "1rem 0" }}>
               <p style={{ color: "rgba(245,240,232,0.9)", fontSize: "1.125rem", lineHeight: 1.7 }}>
                 44,6% das guardas são concedidas exclusivamente à mãe. E mesmo nos casos de guarda compartilhada, que hoje respondem por 44,6% dos divórcios, muitos pais relatam sentir que perderam presença e influência na vida dos filhos.
               </p>
@@ -195,7 +195,7 @@ export default function ModeloDarkPage() {
               "Imagine passar por esse processo com clareza. Com a segurança de que cada decisão está sendo tomada com base estratégica, não em emoção ou pressão do momento.",
             ].map((text, i) => (
               <div key={i} className="card-virada">
-                <div style={{ width: "32px", height: "1px", background: "#C9A452", marginBottom: "1.5rem" }} />
+                <div style={{ width: "32px", height: "1px", background: "#C1C156", marginBottom: "1.5rem" }} />
                 <p className="font-serif" style={{ fontSize: "1.25rem", fontWeight: 300, color: "rgba(245,240,232,0.9)", lineHeight: 1.6 }}>
                   {text}
                 </p>
@@ -203,7 +203,7 @@ export default function ModeloDarkPage() {
             ))}
           </div>
           <div style={{ borderTop: "1px solid rgba(201,164,82,0.2)", paddingTop: "2rem" }}>
-            <p style={{ color: "#C9A452", fontFamily: "Inter, sans-serif", fontSize: "0.75rem", textTransform: "uppercase", letterSpacing: "0.15em" }}>
+            <p style={{ color: "#C1C156", fontFamily: "Inter, sans-serif", fontSize: "0.75rem", textTransform: "uppercase", letterSpacing: "0.15em" }}>
               É exatamente isso que a consultoria estratégica foi desenhada para entregar.
             </p>
           </div>
@@ -264,7 +264,7 @@ export default function ModeloDarkPage() {
             No atendimento jurídico tradicional, você fala com o advogado no início. Depois passa a lidar com secretárias, respostas genéricas e pouca orientação estratégica.
           </p>
           <div style={{ marginBottom: "1.5rem" }}>
-            <p style={{ color: "#C9A452", fontFamily: "Inter, sans-serif", fontSize: "0.75rem", textTransform: "uppercase", letterSpacing: "0.15em", marginBottom: "2rem" }}>Aqui é diferente</p>
+            <p style={{ color: "#C1C156", fontFamily: "Inter, sans-serif", fontSize: "0.75rem", textTransform: "uppercase", letterSpacing: "0.15em", marginBottom: "2rem" }}>Aqui é diferente</p>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "1.5rem" }}>
               {[
                 "Contato direto com o Dr. Leonardo Carvalho em cada etapa",
@@ -273,7 +273,7 @@ export default function ModeloDarkPage() {
                 "Nível de especialização técnica acima da média, com formação nacional e internacional (FGV e Universidade Gregoriana de Roma)",
               ].map((text, i) => (
                 <div key={i} style={{ display: "flex", alignItems: "flex-start", gap: "16px" }}>
-                  <div style={{ width: "1px", height: "48px", background: "#C9A452", flexShrink: 0, marginTop: "4px" }} />
+                  <div style={{ width: "1px", height: "48px", background: "#C1C156", flexShrink: 0, marginTop: "4px" }} />
                   <p style={{ color: "rgba(245,240,232,0.8)", fontFamily: "Inter, sans-serif", fontSize: "1rem", lineHeight: 1.7 }}>
                     {text}
                   </p>
@@ -295,7 +295,7 @@ export default function ModeloDarkPage() {
           </h2>
           <div style={{ display: "flex", flexDirection: "column", gap: "20px", color: "rgba(245,240,232,0.7)", fontFamily: "Inter, sans-serif", fontSize: "1rem", lineHeight: 1.7 }}>
             <p>
-              Para garantir análise individual e profundidade no diagnóstico, o número de atendimentos é intencionalmente limitado a <span style={{ color: "#C9A452", fontWeight: 600 }}>10 por semana</span>.
+              Para garantir análise individual e profundidade no diagnóstico, o número de atendimentos é intencionalmente limitado a <span style={{ color: "#C1C156", fontWeight: 600 }}>10 por semana</span>.
             </p>
             <p>
               Quando a agenda fecha, novos atendimentos são abertos apenas no mês seguinte.

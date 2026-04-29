@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Inter } from "next/font/google";
+import { PT_Serif, Lato } from "next/font/google";
 import "./globals.css";
 
-const cormorant = Cormorant_Garamond({
+const ptSerif = PT_Serif({
   subsets: ["latin"],
-  weight: ["300", "400", "600", "700"],
-  variable: "--font-cormorant",
+  weight: ["400", "700"],
+  variable: "--font-serif",
   display: "swap",
 });
 
-const inter = Inter({
+const lato = Lato({
   subsets: ["latin"],
-  variable: "--font-inter",
+  weight: ["300", "400", "700", "900"],
+  variable: "--font-sans",
   display: "swap",
 });
 
@@ -27,7 +28,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="pt-BR">
       <head>
-        {/* dataLayer init com UTMs — carrega antes do GTM */}
         <script dangerouslySetInnerHTML={{ __html: `
           window.dataLayer = window.dataLayer || [];
           (function() {
@@ -43,7 +43,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           })();
         ` }} />
 
-        {/* Google Tag Manager */}
         {GTM_ID && GTM_ID !== 'PLACEHOLDER_GTM_ID' && (
           <script dangerouslySetInnerHTML={{ __html: `
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -54,7 +53,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           ` }} />
         )}
       </head>
-      <body className={`${cormorant.variable} ${inter.variable}`}>
+      <body className={`${ptSerif.variable} ${lato.variable}`}>
         {GTM_ID && GTM_ID !== 'PLACEHOLDER_GTM_ID' && (
           <noscript dangerouslySetInnerHTML={{ __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=${GTM_ID}" height="0" width="0" style="display:none;visibility:hidden"></iframe>` }} />
         )}
