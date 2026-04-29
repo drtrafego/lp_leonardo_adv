@@ -1,0 +1,45 @@
+export const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_ID;
+export const FB_PIXEL_ID = process.env.NEXT_PUBLIC_FB_PIXEL_ID;
+
+declare global {
+  interface Window {
+    gtag: any;
+    fbq?: any;
+    _fbq?: any;
+    dataLayer: Record<string, any>[];
+  }
+}
+
+export const pageview = (url: string) => {
+  if (typeof window !== 'undefined' && typeof window.gtag !== 'undefined' && GA_TRACKING_ID) {
+    window.gtag('config', GA_TRACKING_ID, { page_path: url });
+  }
+};
+
+export const event = ({ action, category, label, value }: {
+  action: string; category?: string; label?: string; value?: number;
+}) => {
+  if (typeof window !== 'undefined' && typeof window.gtag !== 'undefined') {
+    window.gtag('event', action, { event_category: category, event_label: label, value });
+  }
+};
+
+export const fbEvent = (name: string, options = {}, eventId?: string) => {
+  if (typeof window !== 'undefined' && typeof window.fbq !== 'undefined' && FB_PIXEL_ID) {
+    if (eventId) {
+      (window.fbq as any)('track', name, options, { eventID: eventId });
+    } else {
+      window.fbq('track', name, options);
+    }
+  }
+};
+
+export const fbCustomEvent = (name: string, options = {}, eventId?: string) => {
+  if (typeof window !== 'undefined' && typeof window.fbq !== 'undefined' && FB_PIXEL_ID) {
+    if (eventId) {
+      (window.fbq as any)('trackCustom', name, options, { eventID: eventId });
+    } else {
+      window.fbq('trackCustom', name, options);
+    }
+  }
+};

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carvalho Teixeira | Divórcio para Homens</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            teal: { DEFAULT: '#0B2828', light: '#1a4040' },
+            gold: { DEFAULT: '#C9A452', dark: '#a8893a' },
+            cream: { DEFAULT: '#F9F6F1', warm: '#F5F0E8' },
+          },
+          fontFamily: {
+            serif: ['Cormorant Garamond', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { background-color: #F9F6F1; color: #1A1A1A; font-family: 'Inter', sans-serif; }
+    .font-serif { font-family: 'Cormorant Garamond', serif; }
+    .section-white { background-color: #FFFFFF; }
+    .section-cream { background-color: #F9F6F1; }
+    .btn-teal {
+      background-color: #0B2828;
+      color: #FFFFFF;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      transition: background-color 0.2s ease;
+    }
+    .btn-teal:hover { background-color: #C9A452; color: #0B2828; }
+    .btn-teal-outline {
+      border: 2px solid #0B2828;
+      color: #0B2828;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      transition: all 0.2s ease;
+    }
+    .btn-teal-outline:hover { background-color: #0B2828; color: #FFFFFF; }
+    .check-item::before {
+      content: '';
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      min-width: 18px;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23C9A452' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin-top: 2px;
+    }
+    .gold-accent {
+      width: 48px;
+      height: 3px;
+      background-color: #C9A452;
+      display: block;
+    }
+    .divider { border-top: 1px solid #E8E2D6; }
+    .card-hover { transition: box-shadow 0.2s ease, transform 0.2s ease; }
+    .card-hover:hover { box-shadow: 0 8px 40px rgba(11,40,40,0.08); transform: translateY(-2px); }
+    .nav-scroll {
+      background: rgba(249,246,241,0.97);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(201,164,82,0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="fixed top-0 left-0 right-0 z-50 nav-scroll">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+          <span class="font-serif" style="font-size:1.65rem;color:#C9A452;letter-spacing:0.04em;line-height:1;">CT</span>
+          <div style="width:1px;height:28px;background:rgba(11,40,40,0.2);"></div>
+          <div>
+            <div class="font-serif" style="font-size:0.68rem;letter-spacing:0.22em;color:#0B2828;line-height:1.3;">CARVALHO TEIXEIRA</div>
+            <div class="font-sans" style="font-size:0.5rem;letter-spacing:0.16em;color:rgba(11,40,40,0.45);line-height:1.4;">PARA QUEM TEM MUITO A PRESERVAR</div>
+          </div>
+        </div>
+      <a href="#cta-final" class="btn-teal px-6 py-2.5 text-sm uppercase tracking-widest">
+        Quero Ser Atendido
+      </a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero" class="section-white min-h-screen flex flex-col items-center justify-center px-6 pt-32 pb-24">
+    <div class="max-w-5xl mx-auto">
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+        <div>
+          <span class="gold-accent mb-8 block"></span>
+          <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight text-teal mb-6">
+            Divórcio para Homens:<br />
+            <span class="font-light text-gold">Sem perder a convivência com seus filhos.</span><br />
+            Sem ceder mais patrimônio do que você deve.
+          </h1>
+          <p class="text-gray-600 font-sans text-base leading-relaxed mb-8">
+            Em uma sessão estratégica de 50 minutos, você terá um diagnóstico completo do seu caso, um plano jurídico personalizado e todas as suas dúvidas respondidas, antes de tomar qualquer decisão.
+          </p>
+          <a href="#cta-final" class="btn-teal inline-block px-10 py-4 text-sm uppercase tracking-widest mb-4">
+            Quero Ser Atendido
+          </a>
+          <p class="text-gray-400 text-xs font-sans tracking-wide mt-3">
+            Atendimento online &nbsp;&bull;&nbsp; Vagas limitadas por semana &nbsp;&bull;&nbsp; Processo confidencial
+          </p>
+        </div>
+        <div class="bg-cream rounded-none p-10 border border-gold/20">
+          <p class="text-gold font-sans text-xs uppercase tracking-widest mb-6">O que você recebe na sessão</p>
+          <ul class="flex flex-col gap-5">
+            <li class="flex items-start gap-3 text-gray-700 text-sm font-sans leading-relaxed">
+              <span class="check-item flex-shrink-0 mt-0.5"></span>
+              Plano de ação claro para defender sua convivência com os filhos desde o início do processo
+            </li>
+            <li class="flex items-start gap-3 text-gray-700 text-sm font-sans leading-relaxed">
+              <span class="check-item flex-shrink-0 mt-0.5"></span>
+              Mapeamento dos riscos patrimoniais e medidas para evitar perdas desnecessárias
+            </li>
+            <li class="flex items-start gap-3 text-gray-700 text-sm font-sans leading-relaxed">
+              <span class="check-item flex-shrink-0 mt-0.5"></span>
+              Controle e previsibilidade em cada etapa do processo
+            </li>
+            <li class="flex items-start gap-3 text-gray-700 text-sm font-sans leading-relaxed">
+              <span class="check-item flex-shrink-0 mt-0.5"></span>
+              Contato direto com advogado especialista, sem intermediários, sem sumiço
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CREDENCIAIS -->
+  <section id="credenciais" class="section-cream py-24 px-6">
+    <div class="max-w-5xl mx-auto">
+      <div class="grid md:grid-cols-5 gap-12 items-start">
+        <div class="md:col-span-3">
+          <span class="gold-accent mb-6 block"></span>
+          <p class="text-gold font-sans text-xs uppercase tracking-widest mb-3">Quem vai te atender</p>
+          <h2 class="font-serif text-4xl md:text-5xl text-teal font-semibold mb-2">Dr. Leonardo Carvalho</h2>
+          <p class="text-gray-500 font-sans text-sm mb-8">Advogado com 14 anos de experiência em planejamento e proteção patrimonial.</p>
+          <ul class="flex flex-col gap-4 mb-8">
+            <li class="flex items-start gap-3 text-gray-700 text-sm font-sans">
+              <span class="check-item flex-shrink-0 mt-0.5"></span>
+              Bacharel: Universidade do Estado do Rio de Janeiro (UERJ)
+            </li>
+            <li class="flex items-start gap-3 text-gray-700 text-sm font-sans">
+              <span class="check-item flex-shrink-0 mt-0.5"></span>
+              Especialista: Fundação Getúlio Vargas (FGV)
+            </li>
+            <li class="flex items-start gap-3 text-gray-700 text-sm font-sans">
+              <span class="check-item flex-shrink-0 mt-0.5"></span>
+              Mestrando: Universidade Gregoriana de Roma
+            </li>
+          </ul>
+        </div>
+        <div class="md:col-span-2">
+          <div class="bg-teal text-white p-10">
+            <p class="font-serif text-xl font-light leading-relaxed italic text-white/90">
+              "Você não precisa atravessar esse momento no escuro e não precisa confiar sua situação a quem vai sumir depois da primeira conversa."
+            </p>
+            <div class="w-8 h-px bg-gold mt-6"></div>
+            <p class="text-gold/80 text-xs font-sans uppercase tracking-widest mt-4">Dr. Leonardo Carvalho</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider max-w-6xl mx-auto"></div>
+
+  <!-- DOR -->
+  <section id="dor" class="section-white py-24 px-6">
+    <div class="max-w-3xl mx-auto">
+      <span class="gold-accent mb-6 block"></span>
+      <h2 class="font-serif text-4xl md:text-5xl text-teal font-semibold mb-8 leading-tight">
+        A verdade que poucos falam abertamente.
+      </h2>
+      <div class="space-y-6 text-gray-600 font-sans text-base leading-relaxed">
+        <p>
+          O divórcio não é apenas o fim de um relacionamento. É um processo que redefine, na prática, sua relação com seus filhos e o destino do patrimônio que você construiu ao longo de anos.
+        </p>
+        <div class="bg-cream border-l-4 border-gold pl-8 py-6 my-8">
+          <p class="text-gray-800 text-lg font-sans leading-relaxed">
+            44,6% das guardas são concedidas exclusivamente à mãe. E mesmo nos casos de guarda compartilhada, que hoje respondem por 44,6% dos divórcios, muitos pais relatam sentir que perderam presença e influência na vida dos filhos.
+          </p>
+          <p class="text-gold text-xs uppercase tracking-widest mt-4 font-sans font-semibold">Fonte: IBGE, 2024</p>
+        </div>
+        <p>
+          Quando o processo começa sem estratégia, as consequências são difíceis de reverter. Decisões tomadas sob pressão, para "encerrar logo" e "ter paz", costumam cobrar um preço alto nos anos seguintes.
+        </p>
+        <p>
+          Ao longo de 14 anos, acompanhei dezenas de casos em que isso aconteceu. Pais que passaram a conviver menos com os filhos do que gostariam. Homens que cederam mais patrimônio do que era necessário simplesmente por não terem orientação no momento certo.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIRADA -->
+  <section id="virada" class="section-cream py-24 px-6">
+    <div class="max-w-5xl mx-auto">
+      <span class="gold-accent mb-6 block"></span>
+      <h2 class="font-serif text-4xl md:text-5xl text-teal font-semibold mb-6 leading-tight">
+        É possível conduzir esse processo de forma diferente.
+      </h2>
+      <p class="text-gray-600 font-sans text-base leading-relaxed max-w-3xl mb-14">
+        Com um plano claro desde o primeiro movimento, com controle sobre cada decisão e com previsibilidade sobre o que vem pela frente, sem abrir mão da sua presença na vida dos seus filhos e sem comprometer o que você levou anos para construir.
+      </p>
+      <div class="grid md:grid-cols-3 gap-6 mb-12">
+        <div class="section-white border border-gray-100 p-8 card-hover">
+          <div class="w-10 h-10 bg-teal/5 flex items-center justify-center mb-6">
+            <div class="w-5 h-px bg-gold"></div>
+          </div>
+          <p class="font-serif text-xl text-teal leading-relaxed">
+            Imagine manter uma convivência saudável com seus filhos, participando ativamente da vida deles, sem sentir que perdeu espaço, presença ou autoridade.
+          </p>
+        </div>
+        <div class="section-white border border-gray-100 p-8 card-hover">
+          <div class="w-10 h-10 bg-teal/5 flex items-center justify-center mb-6">
+            <div class="w-5 h-px bg-gold"></div>
+          </div>
+          <p class="font-serif text-xl text-teal leading-relaxed">
+            Imagine atravessar o divórcio com seu patrimônio organizado, protegido e sob controle, sem surpresas e sem a sensação de que abdicou de mais do que deveria.
+          </p>
+        </div>
+        <div class="section-white border border-gray-100 p-8 card-hover">
+          <div class="w-10 h-10 bg-teal/5 flex items-center justify-center mb-6">
+            <div class="w-5 h-px bg-gold"></div>
+          </div>
+          <p class="font-serif text-xl text-teal leading-relaxed">
+            Imagine passar por esse processo com clareza. Com a segurança de que cada decisão está sendo tomada com base estratégica, não em emoção ou pressão do momento.
+          </p>
+        </div>
+      </div>
+      <div class="bg-teal text-white p-8 flex items-center gap-6">
+        <div class="w-1 h-12 bg-gold flex-shrink-0"></div>
+        <p class="font-serif text-xl font-light">
+          É exatamente isso que a consultoria estratégica foi desenhada para entregar.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider max-w-6xl mx-auto"></div>
+
+  <!-- COMO FUNCIONA -->
+  <section id="como-funciona" class="section-white py-24 px-6">
+    <div class="max-w-4xl mx-auto">
+      <span class="gold-accent mb-6 block"></span>
+      <h2 class="font-serif text-4xl md:text-5xl text-teal font-semibold mb-4 leading-tight">
+        Não é uma consulta genérica.<br />É uma sessão estratégica estruturada.
+      </h2>
+      <p class="text-gray-500 font-sans text-base leading-relaxed max-w-2xl mb-14">
+        Em 50 minutos de atendimento direto com o Dr. Leonardo Carvalho, você sai com clareza total sobre o seu caso, sem enrolação, sem respostas vagas, sem precisar marcar um segundo encontro para entender o que fazer.
+      </p>
+      <div class="grid md:grid-cols-2 gap-x-12 gap-y-6 mb-12">
+        <div class="flex items-start gap-4 py-4 border-b border-gray-100">
+          <span class="check-item flex-shrink-0 mt-0.5"></span>
+          <p class="text-gray-700 font-sans text-sm leading-relaxed">Análise da sua estrutura familiar e da dinâmica de convivência com os filhos</p>
+        </div>
+        <div class="flex items-start gap-4 py-4 border-b border-gray-100">
+          <span class="check-item flex-shrink-0 mt-0.5"></span>
+          <p class="text-gray-700 font-sans text-sm leading-relaxed">Mapeamento do seu patrimônio e identificação dos principais riscos</p>
+        </div>
+        <div class="flex items-start gap-4 py-4 border-b border-gray-100">
+          <span class="check-item flex-shrink-0 mt-0.5"></span>
+          <p class="text-gray-700 font-sans text-sm leading-relaxed">Diagnóstico dos pontos sensíveis do seu caso específico</p>
+        </div>
+        <div class="flex items-start gap-4 py-4 border-b border-gray-100">
+          <span class="check-item flex-shrink-0 mt-0.5"></span>
+          <p class="text-gray-700 font-sans text-sm leading-relaxed">Direcionamento claro sobre como conduzir o processo desde o início</p>
+        </div>
+        <div class="flex items-start gap-4 py-4 border-b border-gray-100">
+          <span class="check-item flex-shrink-0 mt-0.5"></span>
+          <p class="text-gray-700 font-sans text-sm leading-relaxed">Definição de quais decisões tomar e quais evitar</p>
+        </div>
+        <div class="flex items-start gap-4 py-4 border-b border-gray-100">
+          <span class="check-item flex-shrink-0 mt-0.5"></span>
+          <p class="text-gray-700 font-sans text-sm leading-relaxed">Estratégia para preservar sua convivência com os filhos e proteger o que você construiu</p>
+        </div>
+        <div class="flex items-start gap-4 py-4 md:col-span-2">
+          <span class="check-item flex-shrink-0 mt-0.5"></span>
+          <p class="text-gray-700 font-sans text-sm leading-relaxed">Espaço para todas as suas dúvidas, respondidas com precisão, sem rodeios</p>
+        </div>
+      </div>
+      <div class="bg-teal text-white px-8 py-6 flex items-center gap-6">
+        <div class="w-1 h-10 bg-gold flex-shrink-0"></div>
+        <p class="font-serif text-2xl font-light text-white">Você não sai com dúvidas. Sai com um plano.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIFERENCIAL -->
+  <section id="diferencial" class="section-cream py-24 px-6">
+    <div class="max-w-5xl mx-auto">
+      <span class="gold-accent mb-6 block"></span>
+      <h2 class="font-serif text-4xl md:text-5xl text-teal font-semibold mb-6 leading-tight">
+        O que diferencia esse atendimento do padrão de mercado.
+      </h2>
+      <p class="text-gray-600 font-sans text-base leading-relaxed max-w-3xl mb-4">
+        No atendimento jurídico tradicional, você fala com o advogado no início. Depois passa a lidar com secretárias, respostas genéricas e pouca orientação estratégica.
+      </p>
+      <p class="text-gold font-sans text-xs uppercase tracking-widest font-semibold mb-10">Aqui é diferente</p>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="section-white border border-gray-100 p-8 card-hover flex items-start gap-5">
+          <div class="w-1 h-12 bg-gold flex-shrink-0 mt-1"></div>
+          <p class="text-gray-700 font-sans text-sm leading-relaxed">
+            Contato direto com o Dr. Leonardo Carvalho em cada etapa
+          </p>
+        </div>
+        <div class="section-white border border-gray-100 p-8 card-hover flex items-start gap-5">
+          <div class="w-1 h-12 bg-gold flex-shrink-0 mt-1"></div>
+          <p class="text-gray-700 font-sans text-sm leading-relaxed">
+            Retorno rápido e acesso facilitado ao longo de todo o processo
+          </p>
+        </div>
+        <div class="section-white border border-gray-100 p-8 card-hover flex items-start gap-5">
+          <div class="w-1 h-12 bg-gold flex-shrink-0 mt-1"></div>
+          <p class="text-gray-700 font-sans text-sm leading-relaxed">
+            Relatório periódico informando o andamento do caso
+          </p>
+        </div>
+        <div class="section-white border border-gray-100 p-8 card-hover flex items-start gap-5">
+          <div class="w-1 h-12 bg-gold flex-shrink-0 mt-1"></div>
+          <p class="text-gray-700 font-sans text-sm leading-relaxed">
+            Nível de especialização técnica acima da média, com formação nacional e internacional (FGV e Universidade Gregoriana de Roma)
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider max-w-6xl mx-auto"></div>
+
+  <!-- ESCASSEZ -->
+  <section id="escassez" class="section-white py-24 px-6">
+    <div class="max-w-3xl mx-auto">
+      <span class="gold-accent mb-6 block"></span>
+      <h2 class="font-serif text-4xl md:text-5xl text-teal font-semibold mb-8 leading-tight">
+        Atendimento por disponibilidade limitada.
+      </h2>
+      <div class="space-y-5 text-gray-600 font-sans text-base leading-relaxed">
+        <p>
+          Para garantir análise individual e profundidade no diagnóstico, o número de atendimentos é intencionalmente limitado a <span class="text-teal font-semibold">10 por semana</span>.
+        </p>
+        <p>
+          Quando a agenda fecha, novos atendimentos são abertos apenas no mês seguinte.
+        </p>
+        <p>
+          O processo começa com um contato inicial, nossa equipe vai entender o seu caso e, se fizer sentido para os dois lados, você recebe o convite para a sessão estratégica.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section id="cta-final" class="bg-teal py-32 px-6">
+    <div class="max-w-3xl mx-auto text-center">
+      <span class="w-12 h-px bg-gold mx-auto mb-8 block"></span>
+      <h2 class="font-serif text-4xl md:text-6xl font-light text-white mb-6 leading-tight">
+        Se você chegou até aqui,<br />
+        entendeu o que está em jogo.
+      </h2>
+      <p class="text-white/70 font-sans text-base leading-relaxed mb-12">
+        A pergunta agora é simples: você vai tomar essa decisão com estratégia, ou no improviso?
+      </p>
+      <a href="https://wa.me/5521000000000" class="inline-block bg-gold text-teal px-12 py-5 text-sm uppercase tracking-widest font-semibold hover:bg-gold/80 transition-colors duration-200 mb-6">
+        Solicitar Atendimento
+      </a>
+      <p class="text-white/40 text-xs font-sans tracking-wide">
+        Atendimento direto com advogado &nbsp;&bull;&nbsp; Online &nbsp;&bull;&nbsp; Vagas limitadas &nbsp;&bull;&nbsp; 100% confidencial
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="section-cream py-12 px-6 border-t border-gray-200">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="flex flex-col items-center md:items-start gap-3">
+        <div class="flex flex-col items-center md:items-start gap-1">
+            <span class="font-serif" style="font-size:2rem;color:#C9A452;letter-spacing:0.04em;line-height:1;">CT</span>
+            <div class="font-serif" style="font-size:0.6rem;letter-spacing:0.2em;color:#0B2828;">CARVALHO TEIXEIRA</div>
+          </div>
+        <p class="text-gold font-serif text-sm italic">Para quem tem muito a preservar</p>
+      </div>
+      <p class="text-gray-400 font-sans text-xs">© 2025 Carvalho Teixeira</p>
+    </div>
+  </footer>
+
+</body>
+</html>

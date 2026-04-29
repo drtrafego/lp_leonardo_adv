@@ -1,0 +1,33 @@
+{
+  "name": "nextapp",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.1.0",
+    "capi-param-builder-nodejs": "^1.2.1",
+    "facebook-nodejs-business-sdk": "^24.0.1",
+"libphonenumber-js": "^1.12.42",
+    "next": "16.2.4",
+    "nodemailer": "^8.0.7",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "react-phone-input-2": "^2.15.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/nodemailer": "^8.0.0",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.4",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
