@@ -55,43 +55,23 @@ export default function ModeloLightPage() {
 
 
       {/* HERO */}
-      <section id="hero" className="section-white" style={{ minHeight: "100vh", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "flex-start", padding: "3rem 1.5rem 3rem" }}>
-        <div style={{ maxWidth: "64rem", margin: "0 auto", width: "100%" }}>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "4rem", alignItems: "center" }}>
-            <div>
-              <span style={{ ...goldAccent, marginBottom: "2rem" }} />
-              <h1 className="font-serif" style={{ fontSize: "clamp(2.2rem, 5vw, 3.75rem)", fontWeight: 600, lineHeight: 1.2, color: "#072B31", marginBottom: "1.5rem" }}>
-                Divórcio para Homens:<br />
-                <span style={{ fontWeight: 300, color: "#C1C156" }}>Sem perder a convivência com seus filhos.</span><br />
-                Sem ceder mais patrimônio do que você deve.
-              </h1>
-              <p style={{ color: "#4B5563", fontFamily: "Inter, sans-serif", fontSize: "1rem", lineHeight: 1.7, marginBottom: "2rem" }}>
-                Em uma sessão estratégica de 50 minutos, você terá um diagnóstico completo do seu caso, um plano jurídico personalizado e todas as suas dúvidas respondidas, antes de tomar qualquer decisão.
-              </p>
-              <a href="#cta-final" className="btn-teal" style={{ padding: "1rem 2.5rem", fontSize: "0.875rem", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: "1rem" }}>
-                Quero Ser Atendido
-              </a>
-              <p style={{ color: "#9CA3AF", fontSize: "0.75rem", fontFamily: "Inter, sans-serif", letterSpacing: "0.05em", marginTop: "0.75rem" }}>
-                Atendimento online &nbsp;&bull;&nbsp; Vagas limitadas por semana &nbsp;&bull;&nbsp; Processo confidencial
-              </p>
-            </div>
-            <div style={{ backgroundColor: "#F9F6F1", padding: "2.5rem", border: "1px solid rgba(201,164,82,0.2)" }}>
-              <p style={{ color: "#C1C156", fontFamily: "Inter, sans-serif", fontSize: "0.75rem", textTransform: "uppercase", letterSpacing: "0.15em", marginBottom: "1.5rem" }}>O que você recebe na sessão</p>
-              <ul style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
-                {[
-                  "Plano de ação claro para defender sua convivência com os filhos desde o início do processo",
-                  "Mapeamento dos riscos patrimoniais e medidas para evitar perdas desnecessárias",
-                  "Controle e previsibilidade em cada etapa do processo",
-                  "Contato direto com advogado especialista, sem intermediários, sem sumiço",
-                ].map((item, i) => (
-                  <li key={i} style={{ display: "flex", alignItems: "flex-start", gap: "12px", color: "#374151", fontSize: "0.875rem", fontFamily: "Inter, sans-serif", lineHeight: 1.6 }}>
-                    <span style={checkItemStyle} />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
+      <section id="hero" className="section-white" style={{ minHeight: "100vh", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "flex-start", padding: "3rem 1.5rem 3rem", textAlign: "center" }}>
+        <div style={{ maxWidth: "56rem", margin: "0 auto", width: "100%" }}>
+          <span style={{ ...goldAccent, margin: "0 auto 2rem" }} />
+          <h1 className="font-serif" style={{ fontSize: "clamp(2.2rem, 5vw, 3.75rem)", fontWeight: 600, lineHeight: 1.2, color: "#072B31", marginBottom: "1.5rem" }}>
+            Divórcio para Homens:<br />
+            <span style={{ fontWeight: 300, color: "#C1C156" }}>Sem perder a convivência com seus filhos.</span><br />
+            Sem ceder mais patrimônio do que você deve.
+          </h1>
+          <p style={{ color: "#4B5563", fontFamily: "Lato, sans-serif", fontSize: "1rem", lineHeight: 1.7, marginBottom: "2rem", maxWidth: "42rem", margin: "0 auto 2rem" }}>
+            Em uma sessão estratégica de 50 minutos, você terá um diagnóstico completo do seu caso, um plano jurídico personalizado e todas as suas dúvidas respondidas, antes de tomar qualquer decisão.
+          </p>
+          <a href="#cta-final" className="btn-teal" style={{ padding: "1rem 2.5rem", fontSize: "0.875rem", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: "1rem" }}>
+            Quero Ser Atendido
+          </a>
+          <p style={{ color: "#9CA3AF", fontSize: "0.75rem", fontFamily: "Lato, sans-serif", letterSpacing: "0.05em", marginTop: "0.75rem" }}>
+            Atendimento online &nbsp;&bull;&nbsp; Vagas limitadas por semana &nbsp;&bull;&nbsp; Processo confidencial
+          </p>
         </div>
       </section>
 
