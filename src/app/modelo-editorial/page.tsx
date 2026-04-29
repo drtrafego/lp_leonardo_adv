@@ -88,46 +88,27 @@ export default function ModeloEditorialPage() {
           <div style={{ position: "absolute", top: "-10%", right: "-5%", width: "55%", height: "110%", background: "radial-gradient(ellipse at 80% 50%, rgba(212,175,96,0.04) 0%, transparent 55%)" }} />
           <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: "1px", background: "linear-gradient(to right, transparent, rgba(212,175,96,0.3), transparent)" }} />
         </div>
-        <div style={{ maxWidth: "80rem", margin: "0 auto", width: "100%", position: "relative", zIndex: 10 }}>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(12, 1fr)", gap: "2rem", alignItems: "flex-end" }}>
-            <div style={{ gridColumn: "span 8" }}>
-              <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "2rem", flexWrap: "wrap" }}>
-                <span style={tagStyle}>Advocacia Especializada</span>
-                <span style={tagStyle}>Divórcio para Homens</span>
-              </div>
-              <h1 className="font-serif" style={{ fontWeight: 300, lineHeight: 1, marginBottom: "2rem", fontSize: "clamp(2.8rem, 7vw, 6.5rem)", letterSpacing: "-0.02em" }}>
-                Divórcio para Homens:<br />
-                <em style={{ color: "#C1C156", fontStyle: "normal" }}>Sem perder a convivência</em><br />
-                <span style={{ color: "rgba(255,255,255,0.6)" }}>com seus filhos.</span>
-              </h1>
-              <div style={{ width: "120px", height: "1px", background: "rgba(212,175,96,0.4)", marginBottom: "2rem" }} />
-              <p style={{ color: "rgba(255,255,255,0.55)", fontFamily: "Inter, sans-serif", fontWeight: 300, fontSize: "clamp(0.9rem, 2vw, 1.125rem)", lineHeight: 1.7, maxWidth: "36rem", marginBottom: "1.5rem" }}>
-                Em uma sessão estratégica de 50 minutos, você terá um diagnóstico completo do seu caso, um plano jurídico personalizado e todas as suas dúvidas respondidas, antes de tomar qualquer decisão.
-              </p>
-              <div style={{ display: "flex", flexDirection: "row", gap: "1rem", alignItems: "center", flexWrap: "wrap" }}>
-                <a href="#cta-final" className="btn-gold-solid" style={{ padding: "1rem 2.5rem", fontSize: "0.75rem", textTransform: "uppercase", letterSpacing: "0.1em" }}>
-                  Quero Ser Atendido
-                </a>
-                <p style={{ color: "rgba(255,255,255,0.3)", fontSize: "0.75rem", fontFamily: "Inter, sans-serif", letterSpacing: "0.05em" }}>
-                  Online &nbsp;&bull;&nbsp; Vagas limitadas &nbsp;&bull;&nbsp; Confidencial
-                </p>
-              </div>
-            </div>
-            <div style={{ gridColumn: "span 4", display: "none" }}>
-              <ul style={{ display: "flex", flexDirection: "column", gap: "16px", border: "1px solid rgba(212,175,96,0.1)", padding: "2rem" }}>
-                {[
-                  "Plano de ação para defender a convivência com os filhos",
-                  "Mapeamento dos riscos patrimoniais",
-                  "Controle e previsibilidade em cada etapa",
-                  "Contato direto com advogado especialista",
-                ].map((item, i) => (
-                  <li key={i} style={{ display: "flex", alignItems: "flex-start", gap: "12px", color: "rgba(255,255,255,0.55)", fontSize: "0.75rem", fontFamily: "Inter, sans-serif", lineHeight: 1.6 }}>
-                    <span style={checkGoldStyle} />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
+        <div style={{ maxWidth: "56rem", margin: "0 auto", width: "100%", position: "relative", zIndex: 10 }}>
+          <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "2rem", flexWrap: "wrap" }}>
+            <span style={tagStyle}>Advocacia Especializada</span>
+            <span style={tagStyle}>Divórcio para Homens</span>
+          </div>
+          <h1 className="font-serif" style={{ fontWeight: 400, lineHeight: 1.1, marginBottom: "2rem", fontSize: "clamp(2.4rem, 6vw, 5rem)" }}>
+            Divórcio para Homens:<br />
+            <em style={{ color: "#C1C156", fontStyle: "normal" }}>Sem perder a convivência</em><br />
+            <span style={{ color: "rgba(255,255,255,0.6)" }}>com seus filhos.</span>
+          </h1>
+          <div style={{ width: "80px", height: "1px", background: "rgba(193,193,86,0.4)", marginBottom: "2rem" }} />
+          <p style={{ color: "rgba(255,255,255,0.55)", fontFamily: "Lato, sans-serif", fontWeight: 300, fontSize: "clamp(0.9rem, 2vw, 1.1rem)", lineHeight: 1.7, maxWidth: "42rem", marginBottom: "2rem" }}>
+            Em uma sessão estratégica de 50 minutos, você terá um diagnóstico completo do seu caso, um plano jurídico personalizado e todas as suas dúvidas respondidas, antes de tomar qualquer decisão.
+          </p>
+          <div style={{ display: "flex", flexDirection: "row", gap: "1rem", alignItems: "center", flexWrap: "wrap" }}>
+            <a href="#cta-final" className="btn-gold-solid" style={{ padding: "1rem 2.5rem", fontSize: "0.75rem", textTransform: "uppercase", letterSpacing: "0.1em" }}>
+              Quero Ser Atendido
+            </a>
+            <p style={{ color: "rgba(255,255,255,0.3)", fontSize: "0.75rem", fontFamily: "Lato, sans-serif", letterSpacing: "0.05em" }}>
+              Online &nbsp;&bull;&nbsp; Vagas limitadas &nbsp;&bull;&nbsp; Confidencial
+            </p>
           </div>
         </div>
       </section>
