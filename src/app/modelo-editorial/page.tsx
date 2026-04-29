@@ -81,30 +81,9 @@ export default function ModeloEditorialPage() {
         }
       `}</style>
 
-      {/* NAVBAR */}
-      <nav style={{
-        position: "fixed", top: 0, left: 0, right: 0, zIndex: 50,
-        backgroundColor: "rgba(8,15,15,0.95)",
-        backdropFilter: "blur(12px)",
-        borderBottom: "1px solid rgba(212,175,96,0.08)",
-      }}>
-        <div style={{ maxWidth: "80rem", margin: "0 auto", padding: "1rem 1.5rem", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-          <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-            <span className="font-serif" style={{ fontSize: "1.65rem", color: "#D4AF60", letterSpacing: "0.04em", lineHeight: 1 }}>CT</span>
-            <div style={{ width: "1px", height: "28px", background: "rgba(212,175,96,0.3)" }} />
-            <div>
-              <div className="font-serif" style={{ fontSize: "0.68rem", letterSpacing: "0.22em", color: "#D4AF60", lineHeight: 1.3 }}>CARVALHO TEIXEIRA</div>
-              <div style={{ fontFamily: "Inter, sans-serif", fontSize: "0.5rem", letterSpacing: "0.16em", color: "rgba(212,175,96,0.5)", lineHeight: 1.4 }}>PARA QUEM TEM MUITO A PRESERVAR</div>
-            </div>
-          </div>
-          <a href="#cta-final" className="btn-outline-gold" style={{ padding: "0.625rem 1.75rem", fontSize: "0.75rem", textTransform: "uppercase", letterSpacing: "0.1em" }}>
-            Quero Ser Atendido
-          </a>
-        </div>
-      </nav>
 
       {/* HERO */}
-      <section id="hero" style={{ minHeight: "100vh", display: "flex", flexDirection: "column", justifyContent: "flex-start", padding: "5rem 1.5rem 3rem", position: "relative", overflow: "hidden" }}>
+      <section id="hero" style={{ minHeight: "100vh", display: "flex", flexDirection: "column", justifyContent: "flex-start", padding: "3rem 1.5rem 3rem", position: "relative", overflow: "hidden" }}>
         <div style={{ position: "absolute", inset: 0, pointerEvents: "none" }}>
           <div style={{ position: "absolute", top: "-10%", right: "-5%", width: "55%", height: "110%", background: "radial-gradient(ellipse at 80% 50%, rgba(212,175,96,0.04) 0%, transparent 55%)" }} />
           <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: "1px", background: "linear-gradient(to right, transparent, rgba(212,175,96,0.3), transparent)" }} />

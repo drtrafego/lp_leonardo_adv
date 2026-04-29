@@ -58,33 +58,12 @@ export default function ModeloDarkPage() {
         .card-virada:hover { border-color: rgba(201,164,82,0.5); }
       `}</style>
 
-      {/* NAVBAR */}
-      <nav style={{
-        position: "fixed", top: 0, left: 0, right: 0, zIndex: 50,
-        backgroundColor: "rgba(11,40,40,0.95)",
-        backdropFilter: "blur(4px)",
-        borderBottom: "1px solid rgba(201,164,82,0.1)",
-      }}>
-        <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "1rem 1.5rem", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-          <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-            <span className="font-serif" style={{ fontSize: "1.65rem", color: "#C9A452", letterSpacing: "0.04em", lineHeight: 1 }}>CT</span>
-            <div style={{ width: "1px", height: "28px", background: "rgba(201,164,82,0.35)" }} />
-            <div>
-              <div className="font-serif" style={{ fontSize: "0.68rem", letterSpacing: "0.22em", color: "#C9A452", lineHeight: 1.3 }}>CARVALHO TEIXEIRA</div>
-              <div style={{ fontFamily: "Inter, sans-serif", fontSize: "0.5rem", letterSpacing: "0.16em", color: "rgba(201,164,82,0.55)", lineHeight: 1.4 }}>PARA QUEM TEM MUITO A PRESERVAR</div>
-            </div>
-          </div>
-          <a href="#cta-final" className="btn-gold" style={{ padding: "0.625rem 1.5rem", fontSize: "0.875rem", textTransform: "uppercase", letterSpacing: "0.1em" }}>
-            Quero Ser Atendido
-          </a>
-        </div>
-      </nav>
 
       {/* HERO */}
       <section id="hero" style={{
         minHeight: "100vh", display: "flex", flexDirection: "column",
         alignItems: "center", justifyContent: "center",
-        textAlign: "center", padding: "6rem 1.5rem 3rem",
+        textAlign: "center", padding: "3rem 1.5rem 3rem",
         position: "relative",
       }}>
         <div style={{

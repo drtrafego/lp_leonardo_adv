@@ -53,30 +53,9 @@ export default function ModeloLightPage() {
         }
       `}</style>
 
-      {/* NAVBAR */}
-      <nav style={{
-        position: "fixed", top: 0, left: 0, right: 0, zIndex: 50,
-        backgroundColor: "rgba(249,246,241,0.97)",
-        backdropFilter: "blur(8px)",
-        borderBottom: "1px solid rgba(201,164,82,0.2)",
-      }}>
-        <div style={{ maxWidth: "72rem", margin: "0 auto", padding: "1rem 1.5rem", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-          <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-            <span className="font-serif" style={{ fontSize: "1.65rem", color: "#C9A452", letterSpacing: "0.04em", lineHeight: 1 }}>CT</span>
-            <div style={{ width: "1px", height: "28px", background: "rgba(11,40,40,0.2)" }} />
-            <div>
-              <div className="font-serif" style={{ fontSize: "0.68rem", letterSpacing: "0.22em", color: "#0B2828", lineHeight: 1.3 }}>CARVALHO TEIXEIRA</div>
-              <div style={{ fontFamily: "Inter, sans-serif", fontSize: "0.5rem", letterSpacing: "0.16em", color: "rgba(11,40,40,0.45)", lineHeight: 1.4 }}>PARA QUEM TEM MUITO A PRESERVAR</div>
-            </div>
-          </div>
-          <a href="#cta-final" className="btn-teal" style={{ padding: "0.625rem 1.5rem", fontSize: "0.875rem", textTransform: "uppercase", letterSpacing: "0.1em" }}>
-            Quero Ser Atendido
-          </a>
-        </div>
-      </nav>
 
       {/* HERO */}
-      <section id="hero" className="section-white" style={{ minHeight: "100vh", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "flex-start", padding: "5rem 1.5rem 3rem" }}>
+      <section id="hero" className="section-white" style={{ minHeight: "100vh", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "flex-start", padding: "3rem 1.5rem 3rem" }}>
         <div style={{ maxWidth: "64rem", margin: "0 auto", width: "100%" }}>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "4rem", alignItems: "center" }}>
             <div>
