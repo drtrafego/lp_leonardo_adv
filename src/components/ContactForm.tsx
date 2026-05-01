@@ -43,8 +43,31 @@ export default function ContactForm({ theme }: ContactFormProps) {
         page_path: pathname,
       }),
     })
-      .then((res) => {
+      .then(async (res) => {
         if (res.ok) {
+          const data = await res.json();
+          const eventId = data.eventId ?? ("lead_" + Date.now());
+
+          // Meta Pixel — evento Lead com eventID para deduplicação com CAPI
+          if (typeof window !== "undefined" && typeof (window as any).fbq === "function") {
+            (window as any).fbq("track", "Lead", {}, { eventID: String(eventId) });
+          }
+
+          // Google Ads — conversão + GTM dataLayer
+          if (typeof window !== "undefined") {
+            const gtagId = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID;
+            const convLabel = process.env.NEXT_PUBLIC_GOOGLE_ADS_CONVERSION_LABEL;
+            if (gtagId && convLabel && typeof (window as any).gtag === "function") {
+              (window as any).gtag("event", "conversion", {
+                send_to: `${gtagId}/${convLabel}`,
+              });
+            }
+            // GTM dataLayer — captura via tag de conversão no GTM
+            if (Array.isArray((window as any).dataLayer)) {
+              (window as any).dataLayer.push({ event: "lead_form_submit", eventId: String(eventId) });
+            }
+          }
+
           window.location.href = "/obrigado";
         } else {
           setIsLoading(false);
