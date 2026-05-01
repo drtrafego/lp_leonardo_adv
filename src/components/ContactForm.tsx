@@ -53,19 +53,16 @@ export default function ContactForm({ theme }: ContactFormProps) {
             (window as any).fbq("track", "Lead", {}, { eventID: String(eventId) });
           }
 
-          // Google Ads — conversão + GTM dataLayer
-          if (typeof window !== "undefined") {
-            const gtagId = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID;
-            const convLabel = process.env.NEXT_PUBLIC_GOOGLE_ADS_CONVERSION_LABEL;
-            if (gtagId && convLabel && typeof (window as any).gtag === "function") {
-              (window as any).gtag("event", "conversion", {
-                send_to: `${gtagId}/${convLabel}`,
-              });
-            }
-            // GTM dataLayer — captura via tag de conversão no GTM
-            if (Array.isArray((window as any).dataLayer)) {
-              (window as any).dataLayer.push({ event: "lead_form_submit", eventId: String(eventId) });
-            }
+          // GTM dataLayer — Google Ads importa conversão a partir do GA4
+          if (typeof window !== "undefined" && Array.isArray((window as any).dataLayer)) {
+            (window as any).dataLayer.push({
+              event: "generate_lead",
+              currency: "BRL",
+              value: 0,
+              lead_source: "landing_page",
+              form_name: "Lead Carvalho Teixeira",
+              lead_id: String(eventId),
+            });
           }
 
           window.location.href = "/obrigado";

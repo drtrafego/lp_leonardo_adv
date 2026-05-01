@@ -1,6 +1,7 @@
 import { neon } from '@neondatabase/serverless';
 import { NextRequest, NextResponse } from 'next/server';
 import { buildCAPIParams, parseCookieString, parseQueryString, sendLeadEventToMeta } from '@/lib/facebook';
+import { sendGA4Lead } from '@/lib/tracking-server';
 
 async function saveToNeon(lead: any) {
   try {
@@ -140,6 +141,19 @@ export async function POST(request: NextRequest) {
       );
     } catch (capiError) {
       console.error('Alerta: Meta CAPI falhou:', capiError);
+    }
+
+    try {
+      const cookieHeader = request.headers.get('cookie');
+      const userAgent = request.headers.get('user-agent') ?? undefined;
+      const gaCookie = parseCookieString(cookieHeader)['_ga'];
+
+      await withTimeout(
+        sendGA4Lead({ leadId: String(eventId), gaCookie, userAgent }),
+        5000
+      );
+    } catch (ga4Error) {
+      console.error('Alerta: GA4 falhou:', ga4Error);
     }
 
     return NextResponse.json({
