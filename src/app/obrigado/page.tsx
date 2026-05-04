@@ -17,22 +17,18 @@ function ObrigadoContent() {
     if (firedRef.current) return;
     firedRef.current = true;
 
-    // 100ms de delay garante que GTM já inicializou antes do push
-    setTimeout(() => {
-      const payload = {
-        event: "generate_lead",
-        currency: "BRL",
-        value: 0,
-        lead_source: "landing_page",
-        form_name: "Lead Carvalho Teixeira",
-        lead_id: leadId,
-      };
+    const payload = {
+      event: "generate_lead",
+      currency: "BRL",
+      value: 0,
+      lead_source: "landing_page",
+      form_name: "Lead Carvalho Teixeira",
+      lead_id: leadId,
+    };
 
-      // Via GTM dataLayer
+    const fireEvent = () => {
       window.dataLayer = window.dataLayer || [];
       window.dataLayer.push(payload);
-
-      // Via gtag direto — funciona quando GTM já carregou a GA4 Configuration tag
       if (typeof (window as any).gtag === "function") {
         (window as any).gtag("event", "generate_lead", {
           currency: payload.currency,
@@ -42,13 +38,28 @@ function ObrigadoContent() {
           lead_id: payload.lead_id,
         });
       }
-    }, 100);
+    };
+
+    // Aguarda o GTM inicializar (objeto google_tag_manager presente) antes de disparar
+    // Polling a cada 200ms, timeout máximo de 4s
+    const startedAt = Date.now();
+    const pollInterval = setInterval(() => {
+      const gtmReady = typeof (window as any).google_tag_manager !== "undefined";
+      const timedOut = Date.now() - startedAt >= 4000;
+      if (gtmReady || timedOut) {
+        clearInterval(pollInterval);
+        fireEvent();
+      }
+    }, 200);
 
     const timer = setTimeout(() => {
       window.location.href = whatsappUrl;
     }, 10000);
 
-    return () => clearTimeout(timer);
+    return () => {
+      clearInterval(pollInterval);
+      clearTimeout(timer);
+    };
   }, []);
 
   return (
