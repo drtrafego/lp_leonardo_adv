@@ -53,19 +53,7 @@ export default function ContactForm({ theme }: ContactFormProps) {
             (window as any).fbq("track", "Lead", {}, { eventID: String(eventId) });
           }
 
-          // GTM dataLayer — Google Ads importa conversão a partir do GA4
-          if (typeof window !== "undefined" && Array.isArray((window as any).dataLayer)) {
-            (window as any).dataLayer.push({
-              event: "generate_lead",
-              currency: "BRL",
-              value: 0,
-              lead_source: "landing_page",
-              form_name: "Lead Carvalho Teixeira",
-              lead_id: String(eventId),
-            });
-          }
-
-          window.location.href = "/obrigado";
+          window.location.href = `/obrigado?id=${encodeURIComponent(String(eventId))}`;
         } else {
           setIsLoading(false);
           alert("Ocorreu um erro ao enviar. Tente novamente.");

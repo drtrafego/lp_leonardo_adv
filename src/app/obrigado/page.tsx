@@ -1,12 +1,15 @@
 "use client";
 
 import { useEffect, useRef, Suspense } from "react";
+import { useSearchParams } from "next/navigation";
 
-const WHATSAPP_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "5521000000000";
+const WHATSAPP_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "5521975075776";
 const WHATSAPP_MESSAGE = process.env.NEXT_PUBLIC_WHATSAPP_MESSAGE || "Olá, gostaria de agendar uma sessão estratégica com o Dr. Leonardo Carvalho.";
 
 function ObrigadoContent() {
   const firedRef = useRef(false);
+  const params = useSearchParams();
+  const leadId = params.get("id") ?? ("lead_" + Date.now());
 
   const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
 
@@ -14,11 +17,32 @@ function ObrigadoContent() {
     if (firedRef.current) return;
     firedRef.current = true;
 
-    // Dispara evento de conversão no GTM (Google Ads / GA4)
-    if (typeof window !== "undefined") {
+    // 100ms de delay garante que GTM já inicializou antes do push
+    setTimeout(() => {
+      const payload = {
+        event: "generate_lead",
+        currency: "BRL",
+        value: 0,
+        lead_source: "landing_page",
+        form_name: "Lead Carvalho Teixeira",
+        lead_id: leadId,
+      };
+
+      // Via GTM dataLayer
       window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push({ event: "generate_lead" });
-    }
+      window.dataLayer.push(payload);
+
+      // Via gtag direto — funciona quando GTM já carregou a GA4 Configuration tag
+      if (typeof (window as any).gtag === "function") {
+        (window as any).gtag("event", "generate_lead", {
+          currency: payload.currency,
+          value: payload.value,
+          lead_source: payload.lead_source,
+          form_name: payload.form_name,
+          lead_id: payload.lead_id,
+        });
+      }
+    }, 100);
 
     const timer = setTimeout(() => {
       window.location.href = whatsappUrl;
