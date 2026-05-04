@@ -23,11 +23,13 @@ export const metadata: Metadata = {
 };
 
 const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID;
+const GA4_ID = process.env.NEXT_PUBLIC_GA4_ID;
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt-BR">
       <head>
+        {/* UTMs + dataLayer init */}
         <script dangerouslySetInnerHTML={{ __html: `
           window.dataLayer = window.dataLayer || [];
           (function() {
@@ -43,6 +45,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           })();
         ` }} />
 
+        {/* Google Tag Manager */}
         {GTM_ID && GTM_ID !== 'PLACEHOLDER_GTM_ID' && (
           <script dangerouslySetInnerHTML={{ __html: `
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -51,6 +54,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
             })(window,document,'script','dataLayer','${GTM_ID}');
           ` }} />
+        )}
+
+        {/* GA4 direto — garante window.gtag disponível independente do GTM */}
+        {GA4_ID && (
+          <>
+            <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA4_ID}`} />
+            <script dangerouslySetInnerHTML={{ __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${GA4_ID}', { send_page_view: false });
+            ` }} />
+          </>
         )}
       </head>
       <body className={`${ptSerif.variable} ${lato.variable}`}>
