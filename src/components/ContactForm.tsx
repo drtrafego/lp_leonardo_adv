@@ -276,7 +276,6 @@ export default function ContactForm({ theme }: ContactFormProps) {
           <PhoneInputWithFlag
             value={phone}
             onChange={handlePhoneChange}
-            placeholder="(11) 99999-9999"
           />
         </div>
 
