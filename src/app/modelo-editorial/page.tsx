@@ -83,7 +83,7 @@ export default function ModeloEditorialPage() {
 
 
       {/* HERO */}
-      <section id="hero" style={{ minHeight: "100vh", display: "flex", flexDirection: "column", justifyContent: "flex-start", padding: "3rem 1.5rem 3rem", position: "relative", overflow: "hidden" }}>
+      <section id="hero" style={{ minHeight: "100vh", display: "flex", flexDirection: "column", justifyContent: "flex-start", padding: "2rem 1.5rem", position: "relative", overflow: "hidden" }}>
         <div style={{ position: "absolute", inset: 0, pointerEvents: "none" }}>
           <div style={{ position: "absolute", top: "-10%", right: "-5%", width: "55%", height: "110%", background: "radial-gradient(ellipse at 80% 50%, rgba(212,175,96,0.04) 0%, transparent 55%)" }} />
           <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: "1px", background: "linear-gradient(to right, transparent, rgba(212,175,96,0.3), transparent)" }} />
@@ -114,7 +114,7 @@ export default function ModeloEditorialPage() {
       </section>
 
       {/* CREDENCIAIS */}
-      <section id="credenciais" className="section-mid" style={{ padding: "4rem 1.5rem", position: "relative", overflow: "hidden" }}>
+      <section id="credenciais" className="section-mid" style={{ padding: "2rem 1.5rem", position: "relative", overflow: "hidden" }}>
         <div style={{ position: "absolute", right: 0, top: 0, bottom: 0, display: "flex", alignItems: "center", paddingRight: "1rem", pointerEvents: "none", userSelect: "none" }} aria-hidden="true">
           <span className="number-giant" style={{ fontSize: "clamp(10rem, 22vw, 22rem)" }}>14</span>
         </div>
@@ -157,7 +157,7 @@ export default function ModeloEditorialPage() {
       <div className="divider-thin-ed" style={{ maxWidth: "80rem", margin: "0 auto" }} />
 
       {/* DOR */}
-      <section id="dor" style={{ padding: "4rem 1.5rem" }}>
+      <section id="dor" style={{ padding: "2rem 1.5rem" }}>
         <div style={{ maxWidth: "80rem", margin: "0 auto" }}>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "4rem" }}>
             <div>
@@ -188,7 +188,7 @@ export default function ModeloEditorialPage() {
       </section>
 
       {/* VIRADA */}
-      <section id="virada" className="section-mid" style={{ padding: "4rem 1.5rem" }}>
+      <section id="virada" className="section-mid" style={{ padding: "2rem 1.5rem" }}>
         <div style={{ maxWidth: "80rem", margin: "0 auto" }}>
           <div style={{ marginBottom: "1.5rem" }}>
             <span style={{ ...tagStyle, display: "inline-block", marginBottom: "2rem" }}>A virada</span>
@@ -199,14 +199,14 @@ export default function ModeloEditorialPage() {
               Com um plano claro desde o primeiro movimento, com controle sobre cada decisão e com previsibilidade sobre o que vem pela frente, sem abrir mão da sua presença na vida dos seus filhos e sem comprometer o que você levou anos para construir.
             </p>
           </div>
-          <div className="grid-editorial-ed" style={{ marginBottom: "3rem" }}>
+          <div className="grid-editorial-ed" style={{ marginBottom: "1.5rem" }}>
             {[
               "Imagine manter uma convivência saudável com seus filhos, participando ativamente da vida deles, sem sentir que perdeu espaço, presença ou autoridade.",
               "Imagine atravessar o divórcio com seu patrimônio organizado, protegido e sob controle, sem surpresas e sem a sensação de que abdicou de mais do que deveria.",
               "Imagine passar por esse processo com clareza. Com a segurança de que cada decisão está sendo tomada com base estratégica, não em emoção ou pressão do momento.",
             ].map((text, i) => (
-              <div key={i} style={{ padding: "2.5rem" }}>
-                <div style={{ width: "24px", height: "1px", background: "#C1C156", marginBottom: "2rem" }} />
+              <div key={i} style={{ padding: "1.5rem" }}>
+                <div style={{ width: "24px", height: "1px", background: "#C1C156", marginBottom: "1rem" }} />
                 <p className="font-serif" style={{ fontSize: "1.5rem", fontWeight: 300, lineHeight: 1.6, color: "rgba(255,255,255,0.85)" }}>
                   {text}
                 </p>
@@ -224,7 +224,7 @@ export default function ModeloEditorialPage() {
       <div className="divider-thin-ed" style={{ maxWidth: "80rem", margin: "0 auto" }} />
 
       {/* COMO FUNCIONA */}
-      <section id="como-funciona" style={{ padding: "4rem 1.5rem", position: "relative", overflow: "hidden" }}>
+      <section id="como-funciona" style={{ padding: "2rem 1.5rem", position: "relative", overflow: "hidden" }}>
         <div style={{ position: "absolute", left: "-2rem", top: 0, bottom: 0, display: "flex", alignItems: "center", pointerEvents: "none", userSelect: "none" }} aria-hidden="true">
           <span className="number-giant" style={{ fontSize: "clamp(10rem, 20vw, 20rem)" }}>50</span>
         </div>
@@ -269,7 +269,7 @@ export default function ModeloEditorialPage() {
       </section>
 
       {/* DIFERENCIAL */}
-      <section id="diferencial" className="section-mid" style={{ padding: "4rem 1.5rem" }}>
+      <section id="diferencial" className="section-mid" style={{ padding: "2rem 1.5rem" }}>
         <div style={{ maxWidth: "80rem", margin: "0 auto" }}>
           <span style={{ ...tagStyle, display: "inline-block", marginBottom: "2rem" }}>Diferencial</span>
           <h2 className="font-serif" style={{ fontWeight: 300, lineHeight: 1.2, maxWidth: "48rem", marginBottom: "1.5rem", fontSize: "clamp(2rem, 4.5vw, 4rem)" }}>
@@ -278,7 +278,7 @@ export default function ModeloEditorialPage() {
           <p style={{ color: "rgba(255,255,255,0.45)", fontFamily: "Inter, sans-serif", fontSize: "1rem", lineHeight: 1.7, maxWidth: "32rem", marginBottom: "1rem" }}>
             No atendimento jurídico tradicional, você fala com o advogado no início. Depois passa a lidar com secretárias, respostas genéricas e pouca orientação estratégica.
           </p>
-          <p style={{ color: "#C1C156", fontFamily: "Inter, sans-serif", fontSize: "0.75rem", textTransform: "uppercase", letterSpacing: "0.15em", marginBottom: "3rem" }}>Aqui é diferente</p>
+          <p style={{ color: "#C1C156", fontFamily: "Inter, sans-serif", fontSize: "0.75rem", textTransform: "uppercase", letterSpacing: "0.15em", marginBottom: "1.5rem" }}>Aqui é diferente</p>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "1px", backgroundColor: "rgba(255,255,255,0.05)" }}>
             {[
               "Contato direto com o Dr. Leonardo Carvalho em cada etapa",
@@ -286,7 +286,7 @@ export default function ModeloEditorialPage() {
               "Relatório periódico informando o andamento do caso",
               "Nível de especialização técnica acima da média, com formação nacional e internacional (FGV e Universidade Gregoriana de Roma)",
             ].map((text, i) => (
-              <div key={i} style={{ backgroundColor: "#072B31", padding: "2.5rem", display: "flex", alignItems: "flex-start", gap: "24px" }}>
+              <div key={i} style={{ backgroundColor: "#072B31", padding: "1.5rem", display: "flex", alignItems: "flex-start", gap: "24px" }}>
                 <div style={{ width: "1px", height: "64px", background: "#C1C156", flexShrink: 0, marginTop: "4px" }} />
                 <p style={{ color: "rgba(255,255,255,0.65)", fontFamily: "Inter, sans-serif", fontSize: "0.875rem", lineHeight: 1.6 }}>{text}</p>
               </div>
@@ -298,14 +298,14 @@ export default function ModeloEditorialPage() {
       <div className="divider-thin-ed" style={{ maxWidth: "80rem", margin: "0 auto" }} />
 
       {/* ESCASSEZ */}
-      <section id="escassez" style={{ padding: "4rem 1.5rem", position: "relative", overflow: "hidden" }}>
+      <section id="escassez" style={{ padding: "2rem 1.5rem", position: "relative", overflow: "hidden" }}>
         <div style={{ position: "absolute", right: "-2rem", top: 0, bottom: 0, display: "flex", alignItems: "center", pointerEvents: "none", userSelect: "none" }} aria-hidden="true">
           <span className="number-giant" style={{ fontSize: "clamp(10rem, 20vw, 20rem)" }}>10</span>
         </div>
         <div style={{ maxWidth: "80rem", margin: "0 auto", position: "relative", zIndex: 10 }}>
           <div style={{ maxWidth: "40rem" }}>
             <span style={{ ...tagStyle, display: "inline-block", marginBottom: "2rem" }}>Disponibilidade</span>
-            <h2 className="font-serif" style={{ fontWeight: 300, lineHeight: 1.2, marginBottom: "2.5rem", fontSize: "clamp(2rem, 4vw, 3.5rem)" }}>
+            <h2 className="font-serif" style={{ fontWeight: 300, lineHeight: 1.2, marginBottom: "1.5rem", fontSize: "clamp(2rem, 4vw, 3.5rem)" }}>
               Atendimento por disponibilidade limitada.
             </h2>
             <div style={{ display: "flex", flexDirection: "column", gap: "20px", color: "rgba(255,255,255,0.55)", fontFamily: "Inter, sans-serif", fontSize: "1rem", lineHeight: 1.7 }}>
@@ -324,15 +324,15 @@ export default function ModeloEditorialPage() {
       </section>
 
       {/* CTA FINAL */}
-      <section id="cta-final" style={{ padding: "5rem 1.5rem", position: "relative", overflow: "hidden", background: "linear-gradient(135deg, #0A3038 0%, #072B31 60%, #0B2020 100%)" }}>
+      <section id="cta-final" style={{ padding: "2.5rem 1.5rem", position: "relative", overflow: "hidden", background: "linear-gradient(135deg, #0A3038 0%, #072B31 60%, #0B2020 100%)" }}>
         <div style={{ position: "absolute", inset: 0, pointerEvents: "none", background: "radial-gradient(ellipse at 50% 50%, rgba(212,175,96,0.05) 0%, transparent 60%)" }} />
         <div style={{ maxWidth: "64rem", margin: "0 auto", textAlign: "center", position: "relative", zIndex: 10 }}>
-          <div style={{ width: "64px", height: "1px", background: "#C1C156", margin: "0 auto 2.5rem" }} />
-          <h2 className="font-serif" style={{ fontWeight: 300, lineHeight: 1, marginBottom: "2rem", fontSize: "clamp(2.5rem, 6vw, 5.5rem)", letterSpacing: "-0.02em" }}>
+          <div style={{ width: "64px", height: "1px", background: "#C1C156", margin: "0 auto 1.5rem" }} />
+          <h2 className="font-serif" style={{ fontWeight: 300, lineHeight: 1, marginBottom: "1.25rem", fontSize: "clamp(2.5rem, 6vw, 5.5rem)", letterSpacing: "-0.02em" }}>
             Se você chegou até aqui,<br />
             <em style={{ fontStyle: "normal", color: "#C1C156" }}>entendeu o que está em jogo.</em>
           </h2>
-          <p style={{ color: "rgba(255,255,255,0.45)", fontFamily: "Inter, sans-serif", fontSize: "1rem", lineHeight: 1.7, maxWidth: "32rem", margin: "0 auto 3.5rem" }}>
+          <p style={{ color: "rgba(255,255,255,0.45)", fontFamily: "Inter, sans-serif", fontSize: "1rem", lineHeight: 1.7, maxWidth: "32rem", margin: "0 auto 2rem" }}>
             A pergunta agora é simples: você vai tomar essa decisão com estratégia, ou no improviso?
           </p>
           <div style={{ display: "flex", justifyContent: "center" }}>
@@ -344,7 +344,7 @@ export default function ModeloEditorialPage() {
       </section>
 
       {/* FOOTER */}
-      <footer style={{ padding: "3.5rem 1.5rem", borderTop: "1px solid rgba(255,255,255,0.05)" }}>
+      <footer style={{ padding: "1.5rem 1.5rem", borderTop: "1px solid rgba(255,255,255,0.05)" }}>
         <div style={{ maxWidth: "80rem", margin: "0 auto", display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "1.5rem" }}>
           <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", gap: "12px" }}>
             <Image src="/Monograma.png" alt="CT" width={52} height={52} style={{ mixBlendMode: "screen", opacity: 0.85 }} />

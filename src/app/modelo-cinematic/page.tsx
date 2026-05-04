@@ -250,7 +250,7 @@ export default function ModeloCinematicPage() {
       <HeroSection />
 
       {/* STATS */}
-      <section style={{ padding: "3rem 1.5rem", backgroundColor: "#FFFFFF", borderTop: "1px solid #E8E2D6" }}>
+      <section style={{ padding: "1.5rem 1.5rem", backgroundColor: "#FFFFFF", borderTop: "1px solid #E8E2D6" }}>
         <div style={{ maxWidth: "64rem", margin: "0 auto" }}>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))", gap: "1.5rem" }}>
             <StatCard number={14} suffix=" anos" label="de experiência" delay={0} />
@@ -263,7 +263,7 @@ export default function ModeloCinematicPage() {
       <div className="divider-light" />
 
       {/* CREDENCIAIS */}
-      <section id="credenciais" style={{ padding: "3.5rem 1.5rem", backgroundColor: "#F9F6F1" }}>
+      <section id="credenciais" style={{ padding: "2rem 1.5rem", backgroundColor: "#F9F6F1" }}>
         <div style={{ maxWidth: "64rem", margin: "0 auto" }}>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "4rem", alignItems: "center" }}>
             <RevealSection from="left">
@@ -304,7 +304,7 @@ export default function ModeloCinematicPage() {
               </div>
             </RevealSection>
             <RevealSection from="right">
-              <div style={{ backgroundColor: "#072B31", padding: "2.5rem", position: "relative" }}>
+              <div style={{ backgroundColor: "#072B31", padding: "1.5rem", position: "relative" }}>
                 <div style={{ position: "absolute", top: 0, left: 0, width: "4px", height: "100%", backgroundColor: "#C1C156" }} />
                 <p className="font-serif" style={{ fontSize: "clamp(1.2rem, 3vw, 1.75rem)", fontWeight: 300, color: "rgba(245,240,232,0.9)", lineHeight: 1.6, fontStyle: "italic" }}>
                   "Você não precisa atravessar esse momento no escuro e não precisa confiar sua situação a quem vai sumir depois da primeira conversa."
@@ -319,7 +319,7 @@ export default function ModeloCinematicPage() {
       <div className="divider-light" />
 
       {/* DOR */}
-      <section id="dor" style={{ padding: "3.5rem 1.5rem", backgroundColor: "#FFFFFF" }}>
+      <section id="dor" style={{ padding: "2rem 1.5rem", backgroundColor: "#FFFFFF" }}>
         <div style={{ maxWidth: "48rem", margin: "0 auto" }}>
           <RevealSection from="bottom">
             <motion.span
@@ -356,7 +356,7 @@ export default function ModeloCinematicPage() {
       <div className="divider-light" />
 
       {/* VIRADA */}
-      <section id="virada" style={{ padding: "3.5rem 1.5rem", backgroundColor: "#F9F6F1" }}>
+      <section id="virada" style={{ padding: "2rem 1.5rem", backgroundColor: "#F9F6F1" }}>
         <div style={{ maxWidth: "64rem", margin: "0 auto" }}>
           <RevealSection from="bottom">
             <motion.span
@@ -408,7 +408,7 @@ export default function ModeloCinematicPage() {
       <div className="divider-light" />
 
       {/* COMO FUNCIONA */}
-      <section id="como-funciona" style={{ padding: "3.5rem 1.5rem", backgroundColor: "#FFFFFF" }}>
+      <section id="como-funciona" style={{ padding: "2rem 1.5rem", backgroundColor: "#FFFFFF" }}>
         <div style={{ maxWidth: "56rem", margin: "0 auto" }}>
           <RevealSection from="left">
             <motion.span
@@ -425,7 +425,7 @@ export default function ModeloCinematicPage() {
               Em 50 minutos de atendimento direto com o Dr. Leonardo Carvalho, você sai com clareza total sobre o seu caso, sem enrolação, sem respostas vagas, sem precisar marcar um segundo encontro para entender o que fazer.
             </p>
           </RevealSection>
-          <div style={{ marginBottom: "3rem" }}>
+          <div style={{ marginBottom: "1.5rem" }}>
             {[
               "Análise da sua estrutura familiar e da dinâmica de convivência com os filhos",
               "Mapeamento do seu patrimônio e identificação dos principais riscos",
@@ -467,7 +467,7 @@ export default function ModeloCinematicPage() {
       <div className="divider-light" />
 
       {/* DIFERENCIAL */}
-      <section id="diferencial" style={{ padding: "3.5rem 1.5rem", backgroundColor: "#F9F6F1" }}>
+      <section id="diferencial" style={{ padding: "2rem 1.5rem", backgroundColor: "#F9F6F1" }}>
         <div style={{ maxWidth: "64rem", margin: "0 auto" }}>
           <RevealSection from="bottom">
             <motion.span
@@ -480,7 +480,7 @@ export default function ModeloCinematicPage() {
             <h2 className="font-serif" style={{ fontSize: "clamp(2rem, 4vw, 3rem)", fontWeight: 400, color: "#1A1A1A", marginBottom: "1.5rem", lineHeight: 1.2 }}>
               O que diferencia esse atendimento do padrão de mercado.
             </h2>
-            <p style={{ color: "#5A5A5A", fontFamily: "Inter, sans-serif", fontSize: "1rem", lineHeight: 1.7, maxWidth: "48rem", marginBottom: "3rem" }}>
+            <p style={{ color: "#5A5A5A", fontFamily: "Inter, sans-serif", fontSize: "1rem", lineHeight: 1.7, maxWidth: "48rem", marginBottom: "1.5rem" }}>
               No atendimento jurídico tradicional, você fala com o advogado no início. Depois passa a lidar com secretárias, respostas genéricas e pouca orientação estratégica.
             </p>
             <p style={{ color: "#072B31", fontFamily: "Inter, sans-serif", fontSize: "0.75rem", textTransform: "uppercase", letterSpacing: "0.15em", marginBottom: "2rem" }}>Aqui é diferente</p>
@@ -498,7 +498,7 @@ export default function ModeloCinematicPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-40px" }}
                 transition={{ duration: 0.65, delay: i * 0.1, ease: [0.16, 1, 0.3, 1] }}
-                style={{ backgroundColor: "#FFFFFF", padding: "1.75rem", border: "1px solid #E8E2D6" }}
+                style={{ backgroundColor: "#FFFFFF", padding: "1.25rem", border: "1px solid #E8E2D6" }}
               >
                 <motion.div
                   initial={{ height: 0 }}
@@ -519,7 +519,7 @@ export default function ModeloCinematicPage() {
       <div className="divider-light" />
 
       {/* ESCASSEZ */}
-      <section id="escassez" style={{ padding: "3.5rem 1.5rem", backgroundColor: "#FFFFFF" }}>
+      <section id="escassez" style={{ padding: "2rem 1.5rem", backgroundColor: "#FFFFFF" }}>
         <div style={{ maxWidth: "48rem", margin: "0 auto", textAlign: "center" }}>
           <RevealSection from="bottom">
             <motion.span
@@ -542,7 +542,7 @@ export default function ModeloCinematicPage() {
       </section>
 
       {/* CTA FINAL */}
-      <section id="cta-final" style={{ padding: "4rem 1.5rem", backgroundColor: "#072B31" }}>
+      <section id="cta-final" style={{ padding: "2.5rem 1.5rem", backgroundColor: "#072B31" }}>
         <div style={{ maxWidth: "48rem", margin: "0 auto", textAlign: "center" }}>
           <RevealSection from="bottom">
             <motion.span
@@ -550,12 +550,12 @@ export default function ModeloCinematicPage() {
               whileInView={{ width: "48px" }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              style={{ height: "2px", backgroundColor: "#C1C156", display: "block", margin: "0 auto 2rem" }}
+              style={{ height: "2px", backgroundColor: "#C1C156", display: "block", margin: "0 auto 1.25rem" }}
             />
             <h2 className="font-serif" style={{ fontSize: "clamp(2.2rem, 6vw, 4rem)", fontWeight: 300, color: "#F5F0E8", marginBottom: "1.5rem", lineHeight: 1.2 }}>
               Se você chegou até aqui,<br />entendeu o que está em jogo.
             </h2>
-            <p style={{ color: "rgba(245,240,232,0.7)", fontFamily: "Inter, sans-serif", fontSize: "1rem", lineHeight: 1.7, marginBottom: "3rem" }}>
+            <p style={{ color: "rgba(245,240,232,0.7)", fontFamily: "Inter, sans-serif", fontSize: "1rem", lineHeight: 1.7, marginBottom: "1.5rem" }}>
               A pergunta agora é simples: você vai tomar essa decisão com estratégia, ou no improviso?
             </p>
           </RevealSection>
@@ -570,7 +570,7 @@ export default function ModeloCinematicPage() {
       </section>
 
       {/* FOOTER */}
-      <footer style={{ padding: "3rem 1.5rem", borderTop: "1px solid rgba(201,164,82,0.15)", backgroundColor: "#072B31" }}>
+      <footer style={{ padding: "1.5rem 1.5rem", borderTop: "1px solid rgba(201,164,82,0.15)", backgroundColor: "#072B31" }}>
         <div style={{ maxWidth: "72rem", margin: "0 auto", display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "1.5rem" }}>
           <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", gap: "12px" }}>
             <Image src="/Monograma.png" alt="CT" width={56} height={56} style={{ mixBlendMode: "screen", opacity: 0.9 }} />
